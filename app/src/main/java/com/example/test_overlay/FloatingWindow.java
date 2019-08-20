@@ -22,9 +22,6 @@ import android.widget.Toast;
 
 import androidx.annotation.RequiresApi;
 
-import java.io.File;
-import java.io.FileWriter;
-import java.io.IOException;
 
 
 public class FloatingWindow extends Service {
@@ -102,7 +99,7 @@ public class FloatingWindow extends Service {
 
                     Log.d("Before",recordInfo);
 
-                    if(recordInfo!="null") {
+                    if(!recordInfo.equals("null")) {
 
                         if (image == 0) {
 
@@ -159,6 +156,7 @@ public class FloatingWindow extends Service {
             @RequiresApi(api = Build.VERSION_CODES.N)
             @Override
             public boolean onTouch(View view, MotionEvent event) {
+
                 if(gestureDetector.onTouchEvent(event)){
                     preferences = getSharedPreferences("SavedData",MODE_PRIVATE);
                     editor = preferences.edit();

@@ -63,8 +63,8 @@ public class MainActivity extends AppCompatActivity{
             @RequiresApi(api = Build.VERSION_CODES.M)
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent (Settings.ACTION_MANAGE_OVERLAY_PERMISSION, Uri.parse("package:" + getApplicationContext().getPackageName()));
-                startActivityForResult(intent, 1);//gets permission
+                Intent intent = new Intent (Settings.ACTION_ACCESSIBILITY_SETTINGS);
+                startActivity(intent);//gets permission
 
 
             }

@@ -13,8 +13,9 @@ import java.io.File;
 
 public class MailSenderActivity extends AppCompatActivity {
 
-    EditText subject;
-    EditText body;
+    private EditText subject;
+    private EditText body;
+    private String [] emails = {"dani.a@ecobee.com"};
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -37,16 +38,20 @@ public class MailSenderActivity extends AppCompatActivity {
                 Thread sender = new Thread(new Runnable() {
                     @Override
                     public void run() {
-                        try {
-                            GMailSender sender = new GMailSender("uslessemailtest@gmail.com", "password123@");
 
-                            sender.sendMail(String.valueOf(subject.getText()),
-                                    String.valueOf(body.getText()),
-                                    "uslessemailtest@gmail.com",
-                                    "dani.a@ecobee.com", gpxfile);
-                        } catch (Exception e) {
-                            Log.e("mylog", "Error: " + e.getMessage());
+                        for(int i = 0; i < emails.length; i++){
+                            try {
+                                GMailSender sender = new GMailSender("uslessemailtest@gmail.com", "password123@");
+
+                                sender.sendMail(String.valueOf(subject.getText()),
+                                        String.valueOf(body.getText()),
+                                        "uslessemailtest@gmail.com",
+                                        emails[i], gpxfile);
+                            } catch (Exception e) {
+                                Log.e("mylog", "Error: " + e.getMessage());
+                            }
                         }
+
                     }
                 });
                 sender.start();

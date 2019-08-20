@@ -23,11 +23,11 @@ import java.lang.reflect.Array;
 import java.util.ArrayList;
 
 import java.util.List;
+import java.util.StringTokenizer;
 
 import static android.content.ContentValues.TAG;
 
 public class MyAccessibilityService extends AccessibilityService {
-
 
     ArrayList<ArrayList<String>> allData = new ArrayList<ArrayList<String>>();
     ArrayList<String> singleList = new ArrayList<String>();
@@ -92,13 +92,28 @@ public class MyAccessibilityService extends AccessibilityService {
                 recordInfo = preferences.getString("recordInfo","null");
                 editor = preferences.edit();
 
-                if(recordInfo=="True") {
-                    if(singleList.isEmpty())
-                    {
+                if(recordInfo.equals("True")) {
+
+                    if(singleList.isEmpty()) {
                         singleList.add(firstFrame);//firstFrame is manually tracked adds to single list
                     }
 
+
+
                     singleList.add(String.valueOf(event.getClassName())+ event.getText());
+
+                    int count = 0;
+                    for(int i = 0; i < singleList.size(); i++){
+
+                        if(singleList.get(i).contains("android.widget.EditText")
+                                &&singleList.get(i).contains(",")){
+                            count++;
+                            if(count == 2){
+                                singleList.remove(i-1);
+                            }
+                        }
+                    }
+
                     Log.d("SingleList on Btn Click", String.valueOf(singleList));
 
                     buttonInfo.add(String.valueOf(event.getClassName())+ event.getText());
@@ -113,13 +128,14 @@ public class MyAccessibilityService extends AccessibilityService {
 
                 firstFrame = String.valueOf(event.getClassName());
 
-                if(recordInfo=="True") {
+                if(recordInfo.equals("True")) {
 
                     if(!singleList.isEmpty()){
                         allData.add(new ArrayList<>(singleList));
                         Log.d("SingleL on ScreenChange", String.valueOf(singleList));
 
                         singleList.clear();
+                        singleList.add(firstFrame);
                     }
                     preferences = getSharedPreferences("SavedData",MODE_PRIVATE);
                     recordInfo = preferences.getString("recordInfo","null");
@@ -162,6 +178,7 @@ public class MyAccessibilityService extends AccessibilityService {
             clearBdd("format.txt");
             allData.clear();
             singleList.clear();
+            singleList.add(firstFrame);
 
             preferences = getSharedPreferences("SavedData",MODE_PRIVATE);
             editor = preferences.edit();
@@ -171,7 +188,7 @@ public class MyAccessibilityService extends AccessibilityService {
         }
         preferences = getSharedPreferences("SavedData",MODE_PRIVATE);
         generateFiles = preferences.getBoolean("generateFiles", false);
-        if(generateFiles == true){
+        if(generateFiles == true && !allData.isEmpty()){
             Log.d("Before ArrayList", String.valueOf(allData));
             Log.d("Before SingleList", String.valueOf(singleList));
 
@@ -190,6 +207,9 @@ public class MyAccessibilityService extends AccessibilityService {
             generateFiles = false;
             editor.putBoolean("generateFiles",generateFiles);
             editor.apply();
+        }else{
+            Toast.makeText(MyAccessibilityService.this, "File Empty",Toast.LENGTH_LONG);
+
         }
 
     }
@@ -208,23 +228,42 @@ public class MyAccessibilityService extends AccessibilityService {
 
     public void bddMap(ArrayList<ArrayList<String>> allData){
         String strActivity = "I am on ";
-        String strClicked = "When I click ";
+        String strClicked = "When I tap ";
+        String strType = "And I type";
         if(!this.allData.isEmpty()) {
+
             String background = initializeBackground(allData.get(0).get(0));
             appendToBdd(background);
+            String activity = "";
 
             for(int i = 0; i < allData.size();i++)
             {
+                StringTokenizer tokenizer = new StringTokenizer(allData.get(i).get(0),".");
+                while (tokenizer.hasMoreTokens())
+                {
+                    activity = tokenizer.nextToken();
+                }
+
+
+
                 for(int j = 0; j < allData.get(i).size();j++)
                 {
                     String buttonName = allData.get(i).get(j);
 
                     if(j == 0)
-                        appendToBdd(strActivity +allData.get(i).get(0) + "\n");
-                    else
+                        appendToBdd(strActivity +activity + "\n");
+                    else if(allData.get(i).get(j).contains("android.widget.EditText")
+                            &&allData.get(i).get(j).contains(",")){
+
+                        appendToBdd(strType +
+                                buttonName.substring(buttonName.indexOf("[") + 1, buttonName.indexOf("]"))
+                                + "\n");
+
+                    }else {
                         appendToBdd(strClicked +
-                                buttonName
-                                + "\n");//.substring(buttonName.indexOf("["), buttonName.indexOf("]"))
+                                buttonName.substring(buttonName.indexOf("[") + 1, buttonName.indexOf("]"))
+                                + "\n");
+                    }
                 }
             }
         }
