@@ -1,0 +1,3 @@
+xpath,type,status,NextFrame,PreviousFrame,ElementImage,ElementText,CallerActivity,Tag
+//android.widget.ImageButton,ImageButton,Complete,,ComfortSettingsEditFragment,C:/Experimental/src/rsc/images/ComfortSettingsEditFragment_0_0,,ComfortSettingsDetailActivity,
+//android.widget.CheckBox,CheckBox,Complete,,ComfortSettingsEditFragment,C:/Experimental/src/rsc/images/ComfortSettingsEditFragment_0_1,,ComfortSettingsDetailActivity,

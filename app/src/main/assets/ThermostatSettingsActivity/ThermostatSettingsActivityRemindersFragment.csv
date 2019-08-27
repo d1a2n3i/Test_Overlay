@@ -1,0 +1,3 @@
+xpath,type,status,NextFrame,PreviousFrame,ElementImage,ElementText,CallerActivity,Tag
+//android.widget.ImageButton,ImageButton,Complete,,RemindersAlertsFragment,C:/Experimental/src/rsc/images/RemindersFragment_0,,ThermostatSettingsActivity,
+//android.widget.RelativeLayout,RelativeLayout,Complete,ReminderDetailFragment,RemindersAlertsFragment,C:/Experimental/src/rsc/images/RemindersFragment_1,When did you change your filter?,ThermostatSettingsActivity,

@@ -1,0 +1,6 @@
+xpath,type,status,NextFrame,PreviousFrame,ElementImage,ElementText,CallerActivity,Tag
+//android.widget.EditText[@text= 'Automation Home'],EditText,Complete,,HomesListFragment_0,C:/Experimental/src/rsc/images/HomeMigrationAddHomeFragment_0,Automation Home,HomeMigrationActivity,
+//android.widget.EditText[@text= '207 Queens Quay West'],EditText,Complete,,HomesListFragment_0,C:/Experimental/src/rsc/images/HomeMigrationAddHomeFragment_1,207 Queens Quay West,HomeMigrationActivity,
+//android.widget.FrameLayout,FrameLayout,Complete,,HomesListFragment_0,C:/Experimental/src/rsc/images/HomeMigrationAddHomeFragment_2,,HomeMigrationActivity,
+//android.view.View,View,Complete,,HomesListFragment_0,C:/Experimental/src/rsc/images/HomeMigrationAddHomeFragment_3,,HomeMigrationActivity,
+//android.widget.TextView[@text= 'SAVE'],TextView,Complete,,HomesListFragment_0,C:/Experimental/src/rsc/images/HomeMigrationAddHomeFragment_4,SAVE,HomeMigrationActivity,

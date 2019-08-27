@@ -1,0 +1,9 @@
+xpath,type,status,NextFrame,PreviousFrame,ElementImage,ElementText,CallerActivity,Tag,Operation
+//android.widget.ImageButton,ImageButton,Complete,,LightSwitchOnlineFragment,C:/Experimental/src/rsc/images/SmartFeaturesFragment_0,,SmartActivity,,
+//android.widget.ImageView,ImageView,Complete,SmartActivity_PopUp,LightSwitchOnlineFragment,C:/Experimental/src/rsc/images/SmartFeaturesFragment_1,,SmartActivity,,
+//android.widget.RelativeLayout,RelativeLayout,Complete,SmartFeaturesFragment_0,LightSwitchOnlineFragment,C:/Experimental/src/rsc/images/SmartFeaturesFragment_2,Smart Off,SmartActivity,,
+//android.widget.Switch[@text= 'ON'],Switch,Complete,,LightSwitchOnlineFragment,C:/Experimental/src/rsc/images/SmartFeaturesFragment_3,ON,SmartActivity,Dynamic,NetworkCall
+//android.widget.RelativeLayout,RelativeLayout,Complete,SmartOffFragment_0,LightSwitchOnlineFragment,C:/Experimental/src/rsc/images/SmartFeaturesFragment_4,Smart On,SmartActivity,,
+//android.widget.Switch[@text= 'ON'],Switch,Complete,,LightSwitchOnlineFragment,C:/Experimental/src/rsc/images/SmartFeaturesFragment_5,ON,SmartActivity,Dynamic,NetworkCall
+//android.widget.RelativeLayout,RelativeLayout,Complete,NightLightFragment,LightSwitchOnlineFragment,C:/Experimental/src/rsc/images/SmartFeaturesFragment_6,Night Light,SmartActivity,,
+//android.widget.Switch[@text= 'ON'],Switch,Complete,,LightSwitchOnlineFragment,C:/Experimental/src/rsc/images/SmartFeaturesFragment_7,ON,SmartActivity,Dynamic,NetworkCall

@@ -1,0 +1,7 @@
+xpath,type,status,NextFrame,PreviousFrame,ElementImage,ElementText,CallerActivity,Tag,Operation
+//android.widget.ImageButton,ImageButton,Complete,,ReminderPreferencesFragment,C:/Experimental/src/rsc/images/UvLampPreferenceDetailFragment_0,,ThermostatSettingsActivity,,
+//android.widget.Switch[@text= 'ON'],Switch,Complete,,ReminderPreferencesFragment,C:/Experimental/src/rsc/images/UvLampPreferenceDetailFragment_1,ON,ThermostatSettingsActivity,Dynamic,NetworkCall
+//android.widget.RadioButton[@text= 'Runtime hours'],RadioButton,Complete,,ReminderPreferencesFragment,C:/Experimental/src/rsc/images/UvLampPreferenceDetailFragment_2,Runtime hours,ThermostatSettingsActivity,,
+//android.widget.RadioButton[@text= 'Months'],RadioButton,Complete,,ReminderPreferencesFragment,C:/Experimental/src/rsc/images/UvLampPreferenceDetailFragment_3,Months,ThermostatSettingsActivity,,
+//android.widget.TextView[@text= 'Every 12 months'],TextView,Complete,,ReminderPreferencesFragment,C:/Experimental/src/rsc/images/UvLampPreferenceDetailFragment_4,Every 12 months,ThermostatSettingsActivity,,
+"//android.widget.TextView[@text= 'Feb 25, 2019']",TextView,Complete,,ReminderPreferencesFragment,C:/Experimental/src/rsc/images/UvLampPreferenceDetailFragment_5,"Feb 25, 2019",ThermostatSettingsActivity,,

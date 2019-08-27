@@ -1,0 +1,9 @@
+xpath,type,status,NextFrame,PreviousFrame,ElementImage,ElementText,CallerActivity,Tag
+//android.widget.ImageButton,ImageButton,Complete,,ThermostatFragment,C:/Experimental/src/rsc/images/MenuFragment_0,,ThermostatSettingsActivity,
+//android.widget.LinearLayout,LinearLayout,Complete,SystemFragment,ThermostatFragment,C:/Experimental/src/rsc/images/MenuFragment_1,System,ThermostatSettingsActivity,
+//android.widget.LinearLayout,LinearLayout,Complete,SensorSelectorFragment,ThermostatFragment,C:/Experimental/src/rsc/images/MenuFragment_2,Sensors,ThermostatSettingsActivity,
+//android.widget.LinearLayout,LinearLayout,Complete,ScheduleFragment,ThermostatFragment,C:/Experimental/src/rsc/images/MenuFragment_3,Schedule,ThermostatSettingsActivity,
+//android.widget.LinearLayout,LinearLayout,Complete,ComfortSettingsFragment,ThermostatFragment,C:/Experimental/src/rsc/images/MenuFragment_4,Comfort Settings,ThermostatSettingsActivity,
+//android.widget.LinearLayout,LinearLayout,Complete,RemindersAlertsFragment,ThermostatFragment,C:/Experimental/src/rsc/images/MenuFragment_5,Reminders & Alerts,ThermostatSettingsActivity,
+//android.widget.LinearLayout,LinearLayout,Complete,ThermostatPreferencesFragment,ThermostatFragment,C:/Experimental/src/rsc/images/MenuFragment_6,Thermostat Preferences,ThermostatSettingsActivity,
+//android.widget.LinearLayout,LinearLayout,Complete,AboutFragment,ThermostatFragment,C:/Experimental/src/rsc/images/MenuFragment_7,About,ThermostatSettingsActivity,

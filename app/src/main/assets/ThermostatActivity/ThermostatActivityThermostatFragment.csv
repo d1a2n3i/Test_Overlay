@@ -1,0 +1,7 @@
+xpath,type,status,NextFrame,PreviousFrame,ElementImage,ElementText,CallerActivity,Tag
+//android.widget.ImageButton,ImageButton,Complete,,HomeDevicesFragment,C:/Experimental/src/rsc/images/ThermostatFragment_0,,ThermostatActivity,
+//android.widget.FrameLayout,FrameLayout,Complete,,HomeDevicesFragment,C:/Experimental/src/rsc/images/ThermostatFragment_1,,ThermostatActivity,
+//android.widget.ImageView,ImageView,Complete,MenuFragment,HomeDevicesFragment,C:/Experimental/src/rsc/images/ThermostatFragment_2,,ThermostatActivity,
+//android.widget.ImageView,ImageView,Complete,OverviewFragment,HomeDevicesFragment,C:/Experimental/src/rsc/images/ThermostatFragment_3,,ThermostatActivity,
+//android.widget.ImageView,ImageView,Complete,,HomeDevicesFragment,C:/Experimental/src/rsc/images/ThermostatFragment_4,,ThermostatActivity,
+//android.widget.ImageView,ImageView,Complete,AlexaIntroFragment,HomeDevicesFragment,C:/Experimental/src/rsc/images/ThermostatFragment_5,,ThermostatActivity,

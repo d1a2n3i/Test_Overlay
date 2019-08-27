@@ -1,0 +1,6 @@
+xpath,type,status,NextFrame,PreviousFrame,ElementImage,ElementText,CallerActivity,Tag
+//android.widget.EditText[@text= 'Home Name'],EditText,Complete,,HomesListFragment,C:/Experimental/src/rsc/images/HomeMigrationActivityAddaHomeFragment_0,Home Name,HomeMigrationActivity,
+//android.widget.EditText[@text= 'Home Address'],EditText,Complete,,HomesListFragment,C:/Experimental/src/rsc/images/HomeMigrationActivityAddaHomeFragment_1,Home Address,HomeMigrationActivity,
+//android.widget.FrameLayout,FrameLayout,Complete,,HomesListFragment,C:/Experimental/src/rsc/images/HomeMigrationActivityAddaHomeFragment_2,,HomeMigrationActivity,
+//android.view.View,View,Complete,,HomesListFragment,C:/Experimental/src/rsc/images/HomeMigrationActivityAddaHomeFragment_3,,HomeMigrationActivity,
+//android.widget.TextView[@text= 'SAVE'],TextView,Complete,,HomesListFragment,C:/Experimental/src/rsc/images/HomeMigrationActivityAddaHomeFragment_4,SAVE,HomeMigrationActivity,

@@ -1,12 +1,19 @@
+/*
+    This is where all the accessibility information is captured, stored and formatted
+ */
+
 package com.example.test_overlay;
 
 import android.accessibilityservice.AccessibilityService;
 import android.accessibilityservice.AccessibilityServiceInfo;
+import android.app.AlertDialog;
+import android.content.DialogInterface;
 import android.content.SharedPreferences;
 import android.content.pm.PackageManager;
+import android.content.res.AssetManager;
 import android.os.Build;
-import android.os.Bundle;
 import android.os.Environment;
+import android.text.InputType;
 import android.util.Log;
 import android.view.accessibility.AccessibilityEvent;
 import android.view.accessibility.AccessibilityNodeInfo;
@@ -14,12 +21,13 @@ import android.widget.EditText;
 import android.widget.Toast;
 
 import androidx.annotation.RequiresApi;
+import androidx.fragment.app.Fragment;
+import androidx.fragment.app.FragmentManager;
+
 import java.io.File;
-import java.io.FileDescriptor;
 import java.io.FileWriter;
 import java.io.IOException;
-import java.io.PrintWriter;
-import java.lang.reflect.Array;
+
 import java.util.ArrayList;
 
 import java.util.List;
@@ -27,22 +35,44 @@ import java.util.StringTokenizer;
 
 import static android.content.ContentValues.TAG;
 
+
+
 public class MyAccessibilityService extends AccessibilityService {
 
-    ArrayList<ArrayList<String>> allData = new ArrayList<ArrayList<String>>();
-    ArrayList<String> singleList = new ArrayList<String>();
-    String firstFrame;
-    boolean generateFiles = false;
-    boolean resetData = false;
+    /**
+     * Act = Activity
+     * firstFrame: Very first page recorded is stored here
+     * format: Act0
+     *
+     * singleList: Keeps track of events on an activity An activity and all of the events that have occured on that activity is stored here
+     * it is cleared and started anew when a new activity is opened
+     * format: [Act0, eventOnAct0, eventOnAct0... eventOnAct0]
+     *
+     * allData: Stores all singleLists before it get overwritten
+     * format:     [[Act0, eventOnAct0, ... eventOnAct0],[Act1 eventOnAct1, ... eventOnAct1],[Act n eventOnAct n, ... eventOnAct n]]
+    */
+
+
+
+    private BddFunctions bddFunctions = new BddFunctions();
+    private String firstFrame;
+    private ArrayList<String> singleList = new ArrayList<String>();
+    private ArrayList<ArrayList<String>> allData = new ArrayList<ArrayList<String>>();
+
+    //All Variables below are stored in SharedPrefrences and are used across the other 2 activities
     private SharedPreferences preferences;
     private SharedPreferences.Editor editor;
+    boolean generateFiles = false;
+    boolean resetData = false;
     String recordInfo;
-    List<String> storeActivity = new ArrayList<>();
-    List<String> buttonInfo = new ArrayList<>();
+
+    DataFrameReader dataFrameReader = new DataFrameReader();
+
 
     @Override
     protected void onServiceConnected() {
         super.onServiceConnected();
+
         Log.d(TAG,"Service Connected");
 
         final PackageManager pm = getPackageManager();
@@ -52,84 +82,123 @@ public class MyAccessibilityService extends AccessibilityService {
         AccessibilityServiceInfo config = new AccessibilityServiceInfo();
         config.eventTypes = AccessibilityEvent.TYPES_ALL_MASK;
         config.feedbackType = AccessibilityServiceInfo.FEEDBACK_GENERIC;
+
         if (Build.VERSION.SDK_INT >= 16)
             config.flags = AccessibilityServiceInfo.FLAG_INCLUDE_NOT_IMPORTANT_VIEWS;
 
         setServiceInfo(config);
 
-        startActivity(pm.getLaunchIntentForPackage("com.ecobee.athenamobile"));
+        startActivity(pm.getLaunchIntentForPackage("com.ecobee.athenamobile"));//start app on accesibilty event connection
     }
 
     @RequiresApi(api = Build.VERSION_CODES.JELLY_BEAN)
     @Override
     public void onAccessibilityEvent(AccessibilityEvent event) {
 
-        AccessibilityNodeInfo source = event.getSource();
 
-     //   Log.d("TYPE_ALL ",String.valueOf(event));
-      //  Log.d("SOURCE ", String.valueOf(source));
-       // Log.d("SOURCE PARENT ", String.valueOf(source.getParent()));
+       //  Log.d("All Events", String.valueOf(event));
+//        Log.d("Source", String.valueOf(event.getSource()));
+//        Log.d("SingleList: ", String.valueOf(singleList));
+//        Log.d("All data: ", String.valueOf(allData));
         preferences = getSharedPreferences("SavedData",MODE_PRIVATE);
         recordInfo = preferences.getString("recordInfo","null");
         editor = preferences.edit();
 
-
         final int eventType = event.getEventType();
-
+        //all the seperate events that are tracked
         switch(eventType) {
-
-            case AccessibilityEvent.TYPES_ALL_MASK:
-                //Log.d("TYPE_ALL_MASK",String.valueOf(event.getClassName()));
-                break;
-            case AccessibilityEvent.TYPE_VIEW_CONTEXT_CLICKED:
-                //Log.d("TYPE_VIEW_CONTEXT_CLICK",String.valueOf(event.getClassName()));
-                break;
-            case AccessibilityEvent.TYPE_VIEW_TEXT_CHANGED:
-                //Log.d("TYPE_VIEW_TEXT_CHANGED",String.valueOf(event.getClassName()));
-            case AccessibilityEvent.TYPE_VIEW_CLICKED:
-
-                preferences = getSharedPreferences("SavedData",MODE_PRIVATE);
-                recordInfo = preferences.getString("recordInfo","null");
-                editor = preferences.edit();
+            case AccessibilityEvent.TYPE_VIEW_FOCUSED:
 
                 if(recordInfo.equals("True")) {
 
-                    if(singleList.isEmpty()) {
+                    if (singleList.isEmpty()) {
                         singleList.add(firstFrame);//firstFrame is manually tracked adds to single list
                     }
 
 
+                    singleList.add(String.valueOf(event.getClassName())+ event.getText());
+
+                    Toast.makeText(MyAccessibilityService.this, "Focoused: " + event.getClassName(), Toast.LENGTH_SHORT).show();
+
+                    Log.d("SingleL textfiled click", String.valueOf(singleList));
+                }
+                break;
+
+
+            case AccessibilityEvent.TYPE_VIEW_CONTEXT_CLICKED:
+
+                break;
+
+            case AccessibilityEvent.TYPE_VIEW_TEXT_CHANGED:
+
+                if(recordInfo.equals("True")) {
+
+                    if (singleList.isEmpty()) {
+                        singleList.add(firstFrame);//firstFrame is manually tracked adds to single list
+                    }
+
 
                     singleList.add(String.valueOf(event.getClassName())+ event.getText());
 
-                    int count = 0;
                     for(int i = 0; i < singleList.size(); i++){
 
                         if(singleList.get(i).contains("android.widget.EditText")
                                 &&singleList.get(i).contains(",")){
-                            count++;
-                            if(count == 2){
+                            if(i>0 && singleList.get(i-1).contains(",")){
+                                Log.d("Typing to be removed",singleList.get(i-1));
                                 singleList.remove(i-1);
                             }
                         }
                     }
+                    Toast.makeText(MyAccessibilityService.this, "Clicked: " + event.getClassName(), Toast.LENGTH_SHORT).show();
 
-                    Log.d("SingleList on Btn Click", String.valueOf(singleList));
-
-                    buttonInfo.add(String.valueOf(event.getClassName())+ event.getText());
-                    editor.putString("buttonInfo", String.valueOf(buttonInfo));
-                    editor.apply();
-                    Toast.makeText(MyAccessibilityService.this, "Button: " + event.getClassName() + event.getText(), Toast.LENGTH_SHORT).show();
-
-
+                    Log.d("SingleList typing ", String.valueOf(singleList));
                 }
                 break;
-            case AccessibilityEvent.TYPE_WINDOW_STATE_CHANGED:
 
-                firstFrame = String.valueOf(event.getClassName());
+            case AccessibilityEvent.TYPE_VIEW_CLICKED:
+                //Log.d("Clicked", String.valueOf(event));
 
                 if(recordInfo.equals("True")) {
 
+                    if(singleList.isEmpty()) {
+                        singleList.add(firstFrame);//firstFrame is manually tracked, adds to single list
+                    }
+
+                    if(!event.getText().toString().contains("[]"))
+                        singleList.add(String.valueOf(event.getClassName())+ event.getText());
+                    else
+                        singleList.add(event.getClassName() +"[" +event.getContentDescription()+"]");
+
+                    try {
+                        //Log.v("Not","Permission is revoked");
+
+                        Log.d("FRAGMENT????",
+                                dataFrameReader.readAllDataFramesInFolder(MyAccessibilityService.this,
+                                        singleList.get(0), singleList.get(singleList.size()-1)));
+                    } catch (IOException e) {
+                        Log.v("Not",String.valueOf(e));
+
+                        Log.d("NO YOU cant", e + "Sike you thot");
+                    }
+
+                    Log.d("SingleList on Btn Click", String.valueOf(singleList));
+                    Toast.makeText(MyAccessibilityService.this, "Button: " + singleList.get(singleList.size()-1), Toast.LENGTH_SHORT).show();
+
+                }
+
+                break;
+            case AccessibilityEvent.TYPE_WINDOW_STATE_CHANGED:
+
+                String className =  String.valueOf(event.getClassName());
+                if(String.valueOf(event.getClassName()).contains("com.ecobee.athenamobile"))
+                    firstFrame = String.valueOf(event.getClassName());
+
+                else firstFrame = "not on the ecobee app";
+
+                if(recordInfo.equals("True")) {
+
+                    Log.d("FirstFrame",firstFrame);
                     if(!singleList.isEmpty()){
                         allData.add(new ArrayList<>(singleList));
                         Log.d("SingleL on ScreenChange", String.valueOf(singleList));
@@ -137,15 +206,7 @@ public class MyAccessibilityService extends AccessibilityService {
                         singleList.clear();
                         singleList.add(firstFrame);
                     }
-                    preferences = getSharedPreferences("SavedData",MODE_PRIVATE);
-                    recordInfo = preferences.getString("recordInfo","null");
-                    editor = preferences.edit();
 
-                    storeActivity.add( String.valueOf(event.getClassName()));
-                    editor.putString("storeActivity", String.valueOf(storeActivity));
-                    editor.apply();
-
-                    Log.d("Tag", String.valueOf(storeActivity));
                     Toast.makeText(MyAccessibilityService.this, "Page: " + event.getClassName(), Toast.LENGTH_SHORT).show();
 
                 }else{
@@ -154,14 +215,15 @@ public class MyAccessibilityService extends AccessibilityService {
                 break;
 
         }
+
         File root = new File(Environment.getExternalStorageDirectory(), "Notes");
         if (!root.exists()) {
             root.mkdirs();
         }
 
-        File gpxfile = new File(root, "format.txt");
-        FileWriter writer = null;
         try {
+            File gpxfile = new File(root, "format.txt");
+            FileWriter writer = null;
             writer = new FileWriter(gpxfile);
             writer.append(String.valueOf(allData));
             writer.flush();
@@ -170,12 +232,14 @@ public class MyAccessibilityService extends AccessibilityService {
         } catch (IOException e) {
             e.printStackTrace();
         }
+
         preferences = getSharedPreferences("SavedData",MODE_PRIVATE);
         resetData = preferences.getBoolean("resetData", false);
 
+        //Resets the BDD, NOTE:  only reset on an Accessiblity event
         if(resetData == true) {
-            clearBdd("bdd.txt");
-            clearBdd("format.txt");
+            bddFunctions.clearBdd("bdd.txt");
+            bddFunctions.clearBdd("format.txt");
             allData.clear();
             singleList.clear();
             singleList.add(firstFrame);
@@ -186,13 +250,20 @@ public class MyAccessibilityService extends AccessibilityService {
             editor.putBoolean("resetData",resetData);
             editor.apply();
         }
+
+        //Generates the BDD File, NOTE:  only generates a BDD file on an Accessiblity event
         preferences = getSharedPreferences("SavedData",MODE_PRIVATE);
         generateFiles = preferences.getBoolean("generateFiles", false);
-        if(generateFiles == true && !allData.isEmpty()){
+        if(generateFiles == true){
             Log.d("Before ArrayList", String.valueOf(allData));
             Log.d("Before SingleList", String.valueOf(singleList));
 
-            if(!allData.get(allData.size()-1).equals(singleList)) {
+
+            if(allData.size()>0&&!allData.get(allData.size()-1).equals(singleList)) {
+                allData.add(new ArrayList<>(singleList));
+                singleList.clear();
+            }
+            else if(allData.size() == 0 && singleList.size() > 0){
                 allData.add(new ArrayList<>(singleList));
                 singleList.clear();
             }
@@ -200,14 +271,17 @@ public class MyAccessibilityService extends AccessibilityService {
             Log.d("After ArrayList", String.valueOf(allData));
             Log.d("After SingleList", String.valueOf(singleList));
 
-            clearBdd("bdd.txt");
-            bddMap(allData);
+            bddFunctions.clearBdd("bdd.txt");
+            bddFunctions.bddMap(allData);
             preferences = getSharedPreferences("SavedData",MODE_PRIVATE);
             editor = preferences.edit();
             generateFiles = false;
             editor.putBoolean("generateFiles",generateFiles);
             editor.apply();
-        }else{
+                Toast.makeText(MyAccessibilityService.this, "GENRATED",Toast.LENGTH_LONG);
+
+        }else {
+
             Toast.makeText(MyAccessibilityService.this, "File Empty",Toast.LENGTH_LONG);
 
         }
@@ -226,113 +300,4 @@ public class MyAccessibilityService extends AccessibilityService {
         Log.d(TAG,"Service Destroyed");
     }
 
-    public void bddMap(ArrayList<ArrayList<String>> allData){
-        String strActivity = "I am on ";
-        String strClicked = "When I tap ";
-        String strType = "And I type";
-        if(!this.allData.isEmpty()) {
-
-            String background = initializeBackground(allData.get(0).get(0));
-            appendToBdd(background);
-            String activity = "";
-
-            for(int i = 0; i < allData.size();i++)
-            {
-                StringTokenizer tokenizer = new StringTokenizer(allData.get(i).get(0),".");
-                while (tokenizer.hasMoreTokens())
-                {
-                    activity = tokenizer.nextToken();
-                }
-
-
-
-                for(int j = 0; j < allData.get(i).size();j++)
-                {
-                    String buttonName = allData.get(i).get(j);
-
-                    if(j == 0)
-                        appendToBdd(strActivity +activity + "\n");
-                    else if(allData.get(i).get(j).contains("android.widget.EditText")
-                            &&allData.get(i).get(j).contains(",")){
-
-                        appendToBdd(strType +
-                                buttonName.substring(buttonName.indexOf("[") + 1, buttonName.indexOf("]"))
-                                + "\n");
-
-                    }else {
-                        appendToBdd(strClicked +
-                                buttonName.substring(buttonName.indexOf("[") + 1, buttonName.indexOf("]"))
-                                + "\n");
-                    }
-                }
-            }
-        }
-
-    }
-
-    public String initializeBackground(String firstData){
-        String background;
-        Log.d("STRING FIRST DATA", firstData);
-        Log.d("STRING FIRST DATA", String.valueOf(firstData.equals( "com.ecobee.athenamobile.ui.login.LoginActivity")));
-
-        if(firstData.equals( "com.ecobee.athenamobile.ui.login.LoginActivity")){
-            background = "    Background: User should be logged out\n" +
-                    "      Given Driver is initialized\n" +
-                    "      And User is logged out\n";
-
-        }
-        else {
-            background = "  Background: Driver setup\n" +
-                    "    Given Driver is initialized\n" +
-                    "    And User is \"logged in\"\n" +
-                    "    And App has location permissions\n";
-        }
-
-        return background;
-    }
-
-    public String createScenario(){
-        String scenario = "  Scenario: Enter Text Here Manually";
-
-        return scenario;
-    }
-
-    public void appendToBdd(String data){
-        File root = new File(Environment.getExternalStorageDirectory(), "Notes");
-        if (!root.exists()) {
-            root.mkdirs();
-        }
-
-        File gpxfile = new File(root, "bdd.txt");
-
-        FileWriter writer = null;
-        try {
-            writer = new FileWriter(gpxfile, true);
-            writer.append(data);
-            writer.flush();
-            writer.close();
-
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
-    }
-
-    public void clearBdd(String file){
-        File root = new File(Environment.getExternalStorageDirectory(), "Notes");
-        if (!root.exists()) {
-            root.mkdirs();
-        }
-
-        File gpxfile = new File(root, file);
-
-        FileWriter writer = null;
-        try {
-            writer = new FileWriter(gpxfile);
-            writer.flush();
-            writer.close();
-
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
-    }
 }

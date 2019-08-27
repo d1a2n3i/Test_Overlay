@@ -1,0 +1,6 @@
+xpath,type,status,NextFrame,PreviousFrame,ElementImage,ElementText,CallerActivity,Tag
+//android.widget.ImageButton,ImageButton,Complete,,MenuFragment,C:/Experimental/src/rsc/images/AboutFragment_0,,ThermostatSettingsActivity,
+//android.widget.RelativeLayout,RelativeLayout,Complete,,MenuFragment,C:/Experimental/src/rsc/images/AboutFragment_1,Thermostat Model,ThermostatSettingsActivity,
+//android.widget.RelativeLayout,RelativeLayout,Complete,,MenuFragment,C:/Experimental/src/rsc/images/AboutFragment_2,Thermostat Name,ThermostatSettingsActivity,
+//android.widget.RelativeLayout,RelativeLayout,Complete,,MenuFragment,C:/Experimental/src/rsc/images/AboutFragment_3,Firmware Version,ThermostatSettingsActivity,
+//android.widget.RelativeLayout,RelativeLayout,Complete,,MenuFragment,C:/Experimental/src/rsc/images/AboutFragment_4,Serial Number,ThermostatSettingsActivity,

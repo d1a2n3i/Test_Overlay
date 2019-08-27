@@ -1,0 +1,6 @@
+xpath,type,status,NextFrame,PreviousFrame,ElementImage,ElementText,CallerActivity,Tag
+//android.widget.TextView[@text= '2019'],TextView,Complete,,VacationEditFragment,C:/Experimental/src/rsc/images/VacationDetailActivity_DatePicker_0,2019,VacationDetailActivity,
+"//android.widget.TextView[@text= 'Wed, Jul 3']",TextView,Complete,,VacationEditFragment,C:/Experimental/src/rsc/images/VacationDetailActivity_DatePicker_1,"Wed, Jul 3",VacationDetailActivity,
+//android.widget.ImageButton,ImageButton,Complete,,VacationEditFragment,C:/Experimental/src/rsc/images/VacationDetailActivity_DatePicker_2,,VacationDetailActivity,
+//android.widget.Button[@text= 'CANCEL'],Button,Complete,,VacationEditFragment,C:/Experimental/src/rsc/images/VacationDetailActivity_DatePicker_3,CANCEL,VacationDetailActivity,
+//android.widget.Button[@text= 'OK'],Button,Complete,,VacationEditFragment,C:/Experimental/src/rsc/images/VacationDetailActivity_DatePicker_4,OK,VacationDetailActivity,

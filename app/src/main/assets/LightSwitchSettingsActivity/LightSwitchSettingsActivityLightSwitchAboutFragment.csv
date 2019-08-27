@@ -1,0 +1,3 @@
+xpath,type,status,NextFrame,PreviousFrame,ElementImage,ElementText,CallerActivity,Tag
+//android.widget.ImageButton,ImageButton,Complete,,LightSwitchSettingsActivityMainMenuFragment,C:/Experimental/src/rsc/images/LightSwitchAboutFragment_0,,LightSwitchSettingsActivity,
+//android.widget.TextView[@text= 'REMOVE DEVICE FROM ACCOUNT'],TextView,Complete,,LightSwitchSettingsActivityMainMenuFragment,C:/Experimental/src/rsc/images/LightSwitchAboutFragment_1,REMOVE DEVICE FROM ACCOUNT,LightSwitchSettingsActivity,

@@ -1,0 +1,3 @@
+xpath,type,status,NextFrame,PreviousFrame,ElementImage,ElementText,CallerActivity,Tag
+//android.widget.ImageButton,ImageButton,Complete,,HomesListFragment,C:/Experimental/src/rsc/images/HomesListFragment_0_0,,ManageHomesActivity,
+//android.widget.LinearLayout,LinearLayout,Complete,HomeMigrationAddHomeFragment,HomesListFragment,C:/Experimental/src/rsc/images/HomesListFragment_0_1,Automation Home,ManageHomesActivity,

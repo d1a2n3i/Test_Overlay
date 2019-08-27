@@ -1,0 +1,5 @@
+xpath,type,status,NextFrame,PreviousFrame,ElementImage,ElementText,CallerActivity,Tag
+//android.widget.ImageButton,ImageButton,Complete,,MenuFragment,C:/Experimental/src/rsc/images/SystemFragment_0,,ThermostatSettingsActivity,
+//android.widget.RelativeLayout,RelativeLayout,Complete,HvacFragment,MenuFragment,C:/Experimental/src/rsc/images/SystemFragment_1,HVAC,ThermostatSettingsActivity,
+//android.widget.RelativeLayout,RelativeLayout,Complete,FanFragment,MenuFragment,C:/Experimental/src/rsc/images/SystemFragment_2,Fan,ThermostatSettingsActivity,
+//android.widget.RelativeLayout,RelativeLayout,Complete,HumidifierFragment,MenuFragment,C:/Experimental/src/rsc/images/SystemFragment_3,Humidifier,ThermostatSettingsActivity,

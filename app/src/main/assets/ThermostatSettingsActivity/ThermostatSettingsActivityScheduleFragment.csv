@@ -1,0 +1,16 @@
+xpath,type,status,NextFrame,PreviousFrame,ElementImage,ElementText,CallerActivity,Tag
+//android.widget.ImageButton,ImageButton,Complete,,MenuFragment,C:/Experimental/src/rsc/images/ScheduleFragment_0,,ThermostatSettingsActivity,
+//android.widget.TextView,TextView,Complete,,MenuFragment,C:/Experimental/src/rsc/images/ScheduleFragment_1,,ThermostatSettingsActivity,
+//androidx.appcompat.app.ActionBar$Tab,ActionBar$Tab,Complete,,MenuFragment,C:/Experimental/src/rsc/images/ScheduleFragment_2,S,ThermostatSettingsActivity,Dynamic
+//androidx.appcompat.app.ActionBar$Tab,ActionBar$Tab,Complete,,MenuFragment,C:/Experimental/src/rsc/images/ScheduleFragment_3,M,ThermostatSettingsActivity,Dynamic
+//androidx.appcompat.app.ActionBar$Tab,ActionBar$Tab,Complete,,MenuFragment,C:/Experimental/src/rsc/images/ScheduleFragment_4,T,ThermostatSettingsActivity,Dynamic
+//androidx.appcompat.app.ActionBar$Tab,ActionBar$Tab,Complete,,MenuFragment,C:/Experimental/src/rsc/images/ScheduleFragment_5,W,ThermostatSettingsActivity,
+//androidx.appcompat.app.ActionBar$Tab,ActionBar$Tab,Complete,,MenuFragment,C:/Experimental/src/rsc/images/ScheduleFragment_6,T,ThermostatSettingsActivity,Dynamic
+//androidx.appcompat.app.ActionBar$Tab,ActionBar$Tab,Complete,,MenuFragment,C:/Experimental/src/rsc/images/ScheduleFragment_7,F,ThermostatSettingsActivity,Dynamic
+//androidx.appcompat.app.ActionBar$Tab,ActionBar$Tab,Complete,,MenuFragment,C:/Experimental/src/rsc/images/ScheduleFragment_8,S,ThermostatSettingsActivity,Dynamic
+//android.widget.FrameLayout,FrameLayout,Complete,,MenuFragment,C:/Experimental/src/rsc/images/ScheduleFragment_9,Home,ThermostatSettingsActivity,Dynamic
+//android.widget.FrameLayout,FrameLayout,Complete,,MenuFragment,C:/Experimental/src/rsc/images/ScheduleFragment_10,Sleep,ThermostatSettingsActivity,
+//android.widget.LinearLayout,LinearLayout,Complete,,MenuFragment,C:/Experimental/src/rsc/images/ScheduleFragment_11,Sleep,ThermostatSettingsActivity,
+//android.widget.FrameLayout,FrameLayout,Complete,,MenuFragment,C:/Experimental/src/rsc/images/ScheduleFragment_12,Away,ThermostatSettingsActivity,
+//android.widget.LinearLayout,LinearLayout,Complete,,MenuFragment,C:/Experimental/src/rsc/images/ScheduleFragment_13,Away,ThermostatSettingsActivity,
+//android.widget.TextView[@text= 'COPY SCHEDULE TO ANOTHER DAY'],TextView,Complete,,MenuFragment,C:/Experimental/src/rsc/images/ScheduleFragment_14,COPY SCHEDULE TO ANOTHER DAY,ThermostatSettingsActivity,

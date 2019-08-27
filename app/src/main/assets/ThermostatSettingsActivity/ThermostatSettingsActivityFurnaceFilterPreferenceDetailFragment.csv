@@ -1,0 +1,3 @@
+xpath,type,status,NextFrame,PreviousFrame,ElementImage,ElementText,CallerActivity,Tag,Operation
+//android.widget.ImageButton,ImageButton,Complete,,ReminderPreferencesFragment,C:/Experimental/src/rsc/images/FurnaceFilterPreferenceDetailFragment_0,,ThermostatSettingsActivity,,
+//android.widget.Switch[@text= 'OFF'],Switch,Complete,,ReminderPreferencesFragment,C:/Experimental/src/rsc/images/FurnaceFilterPreferenceDetailFragment_1,OFF,ThermostatSettingsActivity,Dynamic,NetworkCall

@@ -1,0 +1,5 @@
+xpath,type,status,NextFrame,PreviousFrame,ElementImage,ElementText,CallerActivity,Tag
+//android.widget.Button[@text= 'CANCEL'],Button,Complete,,VacationEditFragment,C:/Experimental/src/rsc/images/VacationDetailActivity_PopUp_0,CANCEL,VacationDetailActivity,
+//android.widget.Button[@text= 'DISCARD'],Button,Complete,,VacationEditFragment,C:/Experimental/src/rsc/images/VacationDetailActivity_PopUp_1,DISCARD,VacationDetailActivity,
+,,Complete,,,,,,
+,,Complete,,,,,,

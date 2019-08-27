@@ -1,0 +1,13 @@
+xpath,type,status,NextFrame,PreviousFrame,ElementImage,ElementText,CallerActivity,Tag,Operation
+//android.widget.ImageButton,ImageButton,Complete,,ThermostatPreferencesFragment,C:/Experimental/src/rsc/images/ThermostatNameFragment_0,,ThermostatSettingsActivity,,
+//android.widget.LinearLayout,LinearLayout,Complete,,ThermostatPreferencesFragment,C:/Experimental/src/rsc/images/ThermostatNameFragment_1,My ecobee,ThermostatSettingsActivity,Dynamic,NetworkCall
+//android.widget.LinearLayout,LinearLayout,Complete,,ThermostatPreferencesFragment,C:/Experimental/src/rsc/images/ThermostatNameFragment_2,Home,ThermostatSettingsActivity,,NetworkCall
+//android.widget.LinearLayout,LinearLayout,Complete,,ThermostatPreferencesFragment,C:/Experimental/src/rsc/images/ThermostatNameFragment_3,Main Floor,ThermostatSettingsActivity,,NetworkCall
+//android.widget.LinearLayout,LinearLayout,Complete,,ThermostatPreferencesFragment,C:/Experimental/src/rsc/images/ThermostatNameFragment_4,Upstairs,ThermostatSettingsActivity,,NetworkCall
+//android.widget.LinearLayout,LinearLayout,Complete,,ThermostatPreferencesFragment,C:/Experimental/src/rsc/images/ThermostatNameFragment_5,Downstairs,ThermostatSettingsActivity,Dynamic,NetworkCall
+//android.widget.LinearLayout,LinearLayout,Complete,,ThermostatPreferencesFragment,C:/Experimental/src/rsc/images/ThermostatNameFragment_6,Bedroom,ThermostatSettingsActivity,,NetworkCall
+//android.widget.LinearLayout,LinearLayout,Complete,,ThermostatPreferencesFragment,C:/Experimental/src/rsc/images/ThermostatNameFragment_7,Living Room,ThermostatSettingsActivity,Dynamic,NetworkCall
+//android.widget.LinearLayout,LinearLayout,Complete,,ThermostatPreferencesFragment,C:/Experimental/src/rsc/images/ThermostatNameFragment_8,Office,ThermostatSettingsActivity,,NetworkCall
+//android.widget.LinearLayout,LinearLayout,Complete,,ThermostatPreferencesFragment,C:/Experimental/src/rsc/images/ThermostatNameFragment_9,Basement,ThermostatSettingsActivity,Dynamic,NetworkCall
+//android.widget.LinearLayout,LinearLayout,Complete,,ThermostatPreferencesFragment,C:/Experimental/src/rsc/images/ThermostatNameFragment_10,Cottage,ThermostatSettingsActivity,,NetworkCall
+//android.widget.EditText[@text= 'Enter your own'],EditText,Complete,,ThermostatPreferencesFragment,C:/Experimental/src/rsc/images/ThermostatNameFragment_11,Enter your own,ThermostatSettingsActivity,,

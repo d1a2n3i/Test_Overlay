@@ -1,0 +1,12 @@
+xpath,type,status,NextFrame,PreviousFrame,ElementImage,ElementText,CallerActivity,Tag,Operation
+//android.widget.LinearLayout,LinearLayout,Complete,HomeActivity_PopUp,,C:/Experimental/src/rsc/images/HomeDevicesFragment_0,Automation Home,HomeActivity,,
+//android.widget.TextView,TextView,Complete,,,C:/Experimental/src/rsc/images/HomeDevicesFragment_1,,HomeActivity,,
+//android.widget.LinearLayout,LinearLayout,Complete,ThermostatFragment,,C:/Experimental/src/rsc/images/HomeDevicesFragment_2,Office,HomeActivity,,
+//android.widget.LinearLayout,LinearLayout,Complete,,,C:/Experimental/src/rsc/images/HomeDevicesFragment_3,2 Sensors,HomeActivity,Dynamic,
+//android.widget.LinearLayout,LinearLayout,Complete,LightSwitchOnlineFragment,,C:/Experimental/src/rsc/images/HomeDevicesFragment_4,2132,HomeActivity,,
+//android.widget.FrameLayout,FrameLayout,Complete,,,C:/Experimental/src/rsc/images/HomeDevicesFragment_5,,HomeActivity,Dynamic,NetworkCall
+//android.widget.LinearLayout,LinearLayout,Complete,,,C:/Experimental/src/rsc/images/HomeDevicesFragment_6,Living Room,HomeActivity,,
+//android.widget.FrameLayout,FrameLayout,Complete,,,C:/Experimental/src/rsc/images/HomeDevicesFragment_7,,HomeActivity,Dynamic,NetworkCall
+//android.widget.FrameLayout,FrameLayout,Complete,,,C:/Experimental/src/rsc/images/HomeDevicesFragment_8,Home,HomeActivity,Dynamic,
+//android.widget.FrameLayout,FrameLayout,Not Complete,VacationSelectorFragment,,C:/Experimental/src/rsc/images/HomeDevicesFragment_9,Vacation,HomeActivity,,
+//android.widget.FrameLayout,FrameLayout,Not Complete,,,C:/Experimental/src/rsc/images/HomeDevicesFragment_10,Account,HomeActivity,,

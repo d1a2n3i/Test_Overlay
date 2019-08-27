@@ -1,0 +1,3 @@
+xpath,type,status,NextFrame,PreviousFrame,ElementImage,ElementText,CallerActivity,Tag
+//android.widget.ImageButton,ImageButton,Complete,,SystemFragment,C:/Experimental/src/rsc/images/FanFragment_0,,ThermostatSettingsActivity,
+//android.widget.TextView[@text= '5 min/hr'],TextView,Complete,ThermostatSettingsActivity_PopUp,SystemFragment,C:/Experimental/src/rsc/images/FanFragment_1,5 min/hr,ThermostatSettingsActivity,

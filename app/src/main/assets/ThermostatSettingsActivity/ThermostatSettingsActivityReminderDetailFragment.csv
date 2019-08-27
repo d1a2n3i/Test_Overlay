@@ -1,0 +1,4 @@
+xpath,type,status,NextFrame,PreviousFrame,ElementImage,ElementText,CallerActivity,Tag,Operation
+//android.widget.ImageButton,ImageButton,Complete,,RemindersFragment,C:/Experimental/src/rsc/images/ReminderDetailFragment_0,,ThermostatSettingsActivity,,
+//android.widget.RelativeLayout,RelativeLayout,Complete,ThermostatSettingsActivity_DatePicker,RemindersFragment,C:/Experimental/src/rsc/images/ReminderDetailFragment_1,Today,ThermostatSettingsActivity,,
+//android.widget.TextView[@text= 'FILTER CHANGED'],TextView,Complete,,RemindersFragment,C:/Experimental/src/rsc/images/ReminderDetailFragment_2,FILTER CHANGED,ThermostatSettingsActivity,,NetworkCall

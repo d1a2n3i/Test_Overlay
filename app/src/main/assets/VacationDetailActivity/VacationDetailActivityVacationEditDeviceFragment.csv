@@ -1,0 +1,9 @@
+xpath,type,status,NextFrame,PreviousFrame,ElementImage,ElementText,CallerActivity,Tag
+//android.widget.ImageButton,ImageButton,Complete,,VacationEditFragment,C:/Experimental/src/rsc/images/VacationEditDeviceFragment_0,,VacationDetailActivity,
+//android.widget.RadioButton[@text= 'On'],RadioButton,Complete,,VacationEditFragment,C:/Experimental/src/rsc/images/VacationEditDeviceFragment_1,On,VacationDetailActivity,
+//android.widget.RadioButton[@text= 'Off'],RadioButton,Complete,,VacationEditFragment,C:/Experimental/src/rsc/images/VacationEditDeviceFragment_2,Off,VacationDetailActivity,Dynamic
+//android.widget.RadioButton[@text= 'On'],RadioButton,Complete,,VacationEditFragment,C:/Experimental/src/rsc/images/VacationEditDeviceFragment_3,On,VacationDetailActivity,Dynamic
+//android.widget.RadioButton[@text= 'Off'],RadioButton,Complete,,VacationEditFragment,C:/Experimental/src/rsc/images/VacationEditDeviceFragment_4,Off,VacationDetailActivity,Dynamic
+//android.widget.LinearLayout,LinearLayout,Complete,,VacationEditFragment,C:/Experimental/src/rsc/images/VacationEditDeviceFragment_5,Desired Heat,VacationDetailActivity,
+//android.widget.LinearLayout,LinearLayout,Complete,,VacationEditFragment,C:/Experimental/src/rsc/images/VacationEditDeviceFragment_6,Desired Cool,VacationDetailActivity,
+//android.widget.RelativeLayout,RelativeLayout,Not Complete,,VacationEditFragment,C:/Experimental/src/rsc/images/VacationEditDeviceFragment_7,0 min/hr (Recommended),VacationDetailActivity,

@@ -1,0 +1,12 @@
+xpath,type,status,NextFrame,PreviousFrame,ElementImage,ElementText,CallerActivity,Tag
+//android.widget.ImageButton,ImageButton,Complete,,ComfortSettingsFragment,C:/Experimental/src/rsc/images/ComfortSettingsEditFragment_0,,ComfortSettingsDetailActivity,
+//android.widget.TextView[@text= 'SAVE'],TextView,Complete,,ComfortSettingsFragment,C:/Experimental/src/rsc/images/ComfortSettingsEditFragment_1,SAVE,ComfortSettingsDetailActivity,
+//android.widget.EditText[@text= 'Name this comfort setting'],EditText,Complete,,ComfortSettingsFragment,C:/Experimental/src/rsc/images/ComfortSettingsEditFragment_2,Name this comfort setting,ComfortSettingsDetailActivity,
+//android.widget.LinearLayout,LinearLayout,Complete,ComfortSettingsDetailActivity_PopUp,ComfortSettingsFragment,C:/Experimental/src/rsc/images/ComfortSettingsEditFragment_3,Desired Heat,ComfortSettingsDetailActivity,
+//android.widget.LinearLayout,LinearLayout,Complete,,ComfortSettingsFragment,C:/Experimental/src/rsc/images/ComfortSettingsEditFragment_4,Desired Cool,ComfortSettingsDetailActivity,Dynamic
+//android.widget.RadioButton[@text= 'Auto'],RadioButton,Complete,,ComfortSettingsFragment,C:/Experimental/src/rsc/images/ComfortSettingsEditFragment_5,Auto,ComfortSettingsDetailActivity,Dynamic
+//android.widget.RadioButton[@text= 'On'],RadioButton,Complete,,ComfortSettingsFragment,C:/Experimental/src/rsc/images/ComfortSettingsEditFragment_6,On,ComfortSettingsDetailActivity,Dynamic
+//android.widget.RadioButton[@text= 'Auto'],RadioButton,Complete,,ComfortSettingsFragment,C:/Experimental/src/rsc/images/ComfortSettingsEditFragment_7,Auto,ComfortSettingsDetailActivity,Dynamic
+//android.widget.RadioButton[@text= 'On'],RadioButton,Complete,ComfortSettingsEditFragment_0,ComfortSettingsFragment,C:/Experimental/src/rsc/images/ComfortSettingsEditFragment_8,On,ComfortSettingsDetailActivity,
+//android.widget.LinearLayout,LinearLayout,Complete,,ComfortSettingsFragment,C:/Experimental/src/rsc/images/ComfortSettingsEditFragment_9,Someone is usually,ComfortSettingsDetailActivity,
+//android.widget.LinearLayout,LinearLayout,Complete,,ComfortSettingsFragment,C:/Experimental/src/rsc/images/ComfortSettingsEditFragment_10,0 Participating Sensors,ComfortSettingsDetailActivity,

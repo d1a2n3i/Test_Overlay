@@ -15,50 +15,58 @@ public class MailSenderActivity extends AppCompatActivity {
 
     private EditText subject;
     private EditText body;
-    private String [] emails = {"dani.a@ecobee.com"};
+    private Button send;
+    private String senderEmail = "uslessemailtest@gmail.com";//throwaway email
+    private String [] recipients = {"dani.a@ecobee.com"};//Emails addresses used to
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
+
         super.onCreate(savedInstanceState);
         setContentView(R.layout.send_mail);
 
         subject = findViewById(R.id.subject);
         body = findViewById(R.id.body);
 
-        final Button send = (Button) this.findViewById(R.id.Send);
+        Button send = (Button) this.findViewById(R.id.Send);
+
+        //Opens the file to be sent
         File root = new File(Environment.getExternalStorageDirectory(), "Notes");
+
         if (!root.exists()) {
             root.mkdirs();
         }
 
-        final File gpxfile = new File(root, "bdd.txt");
-        send.setOnClickListener(new View.OnClickListener() {
+        final File gpxfile = new File(root, "bdd.txt"); //name of the file sent
 
+        //Sends the gpxfile and the custom subject and body to all recipients on click
+        send.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
                 Thread sender = new Thread(new Runnable() {
+
                     @Override
                     public void run() {
 
-                        for(int i = 0; i < emails.length; i++){
-                            try {
-                                GMailSender sender = new GMailSender("uslessemailtest@gmail.com", "password123@");
+                        for(int i = 0; i < recipients.length; i++){
 
+                            try {
+
+                                GMailSender sender = new GMailSender(senderEmail, "password123@");//GmailSender only works when a gmail account with lowered security is used
                                 sender.sendMail(String.valueOf(subject.getText()),
                                         String.valueOf(body.getText()),
-                                        "uslessemailtest@gmail.com",
-                                        emails[i], gpxfile);
+                                        senderEmail,
+                                        recipients[i], gpxfile);
+
                             } catch (Exception e) {
+
                                 Log.e("mylog", "Error: " + e.getMessage());
+
                             }
                         }
-
                     }
                 });
                 sender.start();
-
             }
         });
-
     }
-
 }

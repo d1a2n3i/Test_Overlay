@@ -1,0 +1,4 @@
+xpath,type,status,NextFrame,PreviousFrame,ElementImage,ElementText,CallerActivity,Tag,Operation
+//android.widget.ImageButton,ImageButton,Complete,,SensorSelectorFragment,C:/Experimental/src/rsc/images/FollowMeFragment_0,,ThermostatSettingsActivity,,
+//android.widget.RadioButton[@text= 'Enable'],RadioButton,Complete,,SensorSelectorFragment,C:/Experimental/src/rsc/images/FollowMeFragment_1,Enable,ThermostatSettingsActivity,,
+//android.widget.RadioButton[@text= 'Disable'],RadioButton,Complete,,SensorSelectorFragment,C:/Experimental/src/rsc/images/FollowMeFragment_2,Disable,ThermostatSettingsActivity,Dynamic,NetworkCall

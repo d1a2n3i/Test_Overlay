@@ -1,0 +1,3 @@
+xpath,type,status,NextFrame,PreviousFrame,ElementImage,ElementText,CallerActivity,Tag
+//android.widget.TextView[@text= 'SIGN IN WITH AMAZON'],TextView,Complete,AlexaWebFragment,ThermostatFragment,C:/Experimental/src/rsc/images/AlexaIntroFragment_0,SIGN IN WITH AMAZON,AlexaSetupActivity,
+//android.widget.TextView[@text= 'SET UP LATER'],TextView,Complete,,ThermostatFragment,C:/Experimental/src/rsc/images/AlexaIntroFragment_1,SET UP LATER,AlexaSetupActivity,

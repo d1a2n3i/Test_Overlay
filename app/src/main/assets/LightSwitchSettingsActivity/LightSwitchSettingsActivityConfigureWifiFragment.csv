@@ -1,0 +1,3 @@
+xpath,type,status,NextFrame,PreviousFrame,ElementImage,ElementText,CallerActivity,Tag,Operation
+//android.widget.ImageButton,ImageButton,Complete,,WifiSettingsFragment,C:/Experimental/src/rsc/images/ConfigureWifiFragment_0,,LightSwitchSettingsActivity,,
+"//android.widget.TextView[@text= 'YES, LIGHT BAR IS AMBER']",TextView,Complete,FindDeviceWifiFragment,WifiSettingsFragment,C:/Experimental/src/rsc/images/ConfigureWifiFragment_1,"YES, LIGHT BAR IS AMBER",LightSwitchSettingsActivity,,NetworkCall

@@ -1,0 +1,4 @@
+xpath,type,status,NextFrame,PreviousFrame,ElementImage,ElementText,CallerActivity,Tag
+//android.widget.ImageButton,ImageButton,Complete,,AccountFragment,C:/Experimental/src/rsc/images/GeofenceConfigurationFragment_0,,GeofenceActivity,
+//android.widget.TextView[@text= 'SAVE'],TextView,Complete,,AccountFragment,C:/Experimental/src/rsc/images/GeofenceConfigurationFragment_1,SAVE,GeofenceActivity,
+//android.widget.Switch[@text= 'OFF'],Switch,Complete,,AccountFragment,C:/Experimental/src/rsc/images/GeofenceConfigurationFragment_2,OFF,GeofenceActivity,Dynamic

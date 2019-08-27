@@ -1,0 +1,3 @@
+xpath,type,status,NextFrame,PreviousFrame,ElementImage,ElementText,CallerActivity,Tag
+//android.widget.ImageButton,ImageButton,Complete,,LightSwitchSettingsActivityMainMenuFragment,C:/Experimental/src/rsc/images/DeviceSettingsFragment_0,,LightSwitchSettingsActivity,
+//android.widget.LinearLayout,LinearLayout,Complete,,LightSwitchSettingsActivityMainMenuFragment,C:/Experimental/src/rsc/images/DeviceSettingsFragment_1,Device Name,LightSwitchSettingsActivity,

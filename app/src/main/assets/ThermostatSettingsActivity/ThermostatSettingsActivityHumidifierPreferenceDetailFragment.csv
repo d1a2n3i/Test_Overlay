@@ -1,0 +1,7 @@
+xpath,type,status,NextFrame,PreviousFrame,ElementImage,ElementText,CallerActivity,Tag,Operation
+//android.widget.ImageButton,ImageButton,Complete,,ReminderPreferencesFragment,C:/Experimental/src/rsc/images/HumidifierPreferenceDetailFragment_0,,ThermostatSettingsActivity,,
+//android.widget.Switch[@text= 'ON'],Switch,Complete,,ReminderPreferencesFragment,C:/Experimental/src/rsc/images/HumidifierPreferenceDetailFragment_1,ON,ThermostatSettingsActivity,Dynamic,NetworkCall
+//android.widget.RadioButton[@text= 'Runtime hours'],RadioButton,Complete,,ReminderPreferencesFragment,C:/Experimental/src/rsc/images/HumidifierPreferenceDetailFragment_2,Runtime hours,ThermostatSettingsActivity,,
+//android.widget.RadioButton[@text= 'Months'],RadioButton,Complete,,ReminderPreferencesFragment,C:/Experimental/src/rsc/images/HumidifierPreferenceDetailFragment_3,Months,ThermostatSettingsActivity,,
+//android.widget.TextView[@text= 'Every 3 months'],TextView,Complete,,ReminderPreferencesFragment,C:/Experimental/src/rsc/images/HumidifierPreferenceDetailFragment_4,Every 3 months,ThermostatSettingsActivity,,
+"//android.widget.TextView[@text= 'Jul 3, 2019']",TextView,Complete,,ReminderPreferencesFragment,C:/Experimental/src/rsc/images/HumidifierPreferenceDetailFragment_5,"Jul 3, 2019",ThermostatSettingsActivity,,

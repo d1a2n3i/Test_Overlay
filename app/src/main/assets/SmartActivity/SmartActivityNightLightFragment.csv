@@ -1,0 +1,2 @@
+xpath,type,status,NextFrame,PreviousFrame,ElementImage,ElementText,CallerActivity,Tag
+//android.widget.ImageButton,ImageButton,Complete,,SmartFeaturesFragment,C:/Experimental/src/rsc/images/NightLightFragment_0,,SmartActivity,

@@ -23,6 +23,12 @@ import javax.mail.internet.MimeBodyPart;
 import javax.mail.internet.MimeMessage;
 import javax.mail.internet.MimeMultipart;
 
+
+/**
+ * GmailSender only works when a gmail account with lowered security is used
+ *
+ * **/
+
 public class GMailSender extends javax.mail.Authenticator {
     private String mailhost = "smtp.gmail.com";
     private String user;
@@ -55,6 +61,7 @@ public class GMailSender extends javax.mail.Authenticator {
         return new PasswordAuthentication(user, password);
     }
 
+    //Sends the mail
     public synchronized void sendMail(String subject, String body, String sender, String recipients, File attachment) throws Exception {
         try{
             MimeMessage message = new MimeMessage(session);
@@ -83,20 +90,6 @@ public class GMailSender extends javax.mail.Authenticator {
         }catch(Exception e){
 
         }
-        //        try{
-//            MimeMessage message = new MimeMessage(session);
-//            DataHandler handler = new DataHandler(new ByteArrayDataSource(body.getBytes(), "text/plain"));
-//            message.setSender(new InternetAddress(sender));
-//            message.setSubject(subject);
-//            message.setDataHandler(handler);
-//            if (recipients.indexOf(',') > 0)
-//                message.setRecipients(Message.RecipientType.TO, InternetAddress.parse(recipients));
-//            else
-//                message.setRecipient(Message.RecipientType.TO, new InternetAddress(recipients));
-//            Transport.send(message);
-//        }catch(Exception e){
-//            Log.d("this shit dont work", String.valueOf(e));
-//        }
     }
 
     public class ByteArrayDataSource implements DataSource {

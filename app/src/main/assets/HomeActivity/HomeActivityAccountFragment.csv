@@ -1,0 +1,10 @@
+xpath,type,status,NextFrame,PreviousFrame,ElementImage,ElementText,CallerActivity,Tag
+//android.widget.LinearLayout,LinearLayout,Complete,GeofenceConfigurationFragment,VacationSelectorFragment,C:/Experimental/src/rsc/images/AccountFragment_0,Geofence,HomeActivity,
+//android.widget.LinearLayout,LinearLayout,Complete,,VacationSelectorFragment,C:/Experimental/src/rsc/images/AccountFragment_1,Manage Homes,HomeActivity,
+//android.widget.LinearLayout,LinearLayout,Complete,DonateRootFragment,VacationSelectorFragment,C:/Experimental/src/rsc/images/AccountFragment_2,Donate Your Data,HomeActivity,
+//android.widget.LinearLayout,LinearLayout,Complete,AccountAboutFragment,VacationSelectorFragment,C:/Experimental/src/rsc/images/AccountFragment_3,About,HomeActivity,
+//android.widget.LinearLayout,LinearLayout,Complete,,VacationSelectorFragment,C:/Experimental/src/rsc/images/AccountFragment_4,Debug Settings,HomeActivity,
+//android.widget.Button[@text= 'LOG OUT'],Button,Complete,,VacationSelectorFragment,C:/Experimental/src/rsc/images/AccountFragment_5,LOG OUT,HomeActivity,
+//android.widget.FrameLayout,FrameLayout,Complete,,VacationSelectorFragment,C:/Experimental/src/rsc/images/AccountFragment_6,Home,HomeActivity,
+//android.widget.FrameLayout,FrameLayout,Complete,,VacationSelectorFragment,C:/Experimental/src/rsc/images/AccountFragment_7,Vacation,HomeActivity,
+//android.widget.FrameLayout,FrameLayout,Complete,,VacationSelectorFragment,C:/Experimental/src/rsc/images/AccountFragment_8,Account,HomeActivity,

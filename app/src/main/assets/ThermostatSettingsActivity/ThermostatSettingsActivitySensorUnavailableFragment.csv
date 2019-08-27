@@ -1,0 +1,5 @@
+xpath,type,status,NextFrame,PreviousFrame,ElementImage,ElementText,CallerActivity,Tag
+//android.widget.ImageButton,ImageButton,Complete,,SensorSelectorFragment,C:/Experimental/src/rsc/images/SensorUnavailableFragment_0,,ThermostatSettingsActivity,
+//android.widget.LinearLayout,LinearLayout,Complete,,SensorSelectorFragment,C:/Experimental/src/rsc/images/SensorUnavailableFragment_1,CALL ECOBEE SUPPORT,ThermostatSettingsActivity,
+//android.widget.LinearLayout,LinearLayout,Complete,,SensorSelectorFragment,C:/Experimental/src/rsc/images/SensorUnavailableFragment_2,EMAIL ECOBEE SUPPORT,ThermostatSettingsActivity,
+//android.widget.TextView[@text= 'UNPAIR SENSOR'],TextView,Not Complete,ThermostatSettingsActivityItmaytakeafewminutestounpairsensor.Fragment,SensorSelectorFragment,C:/Experimental/src/rsc/images/SensorUnavailableFragment_3,UNPAIR SENSOR,ThermostatSettingsActivity,

@@ -1,0 +1,3 @@
+xpath,type,status,NextFrame,PreviousFrame,ElementImage,ElementText,CallerActivity,Tag
+//android.widget.ImageButton,ImageButton,Complete,,LightSwitchSettingsActivityMainMenuFragment,C:/Experimental/src/rsc/images/WifiSettingsFragment_0,,LightSwitchSettingsActivity,
+//android.widget.TextView[@text= 'CHANGE WI-FI NETWORK'],TextView,Complete,ConfigureWifiFragment,LightSwitchSettingsActivityMainMenuFragment,C:/Experimental/src/rsc/images/WifiSettingsFragment_1,CHANGE WI-FI NETWORK,LightSwitchSettingsActivity,

@@ -1,0 +1,5 @@
+xpath,type,status,NextFrame,PreviousFrame,ElementImage,ElementText,CallerActivity,Tag
+//android.widget.ImageButton,ImageButton,Complete,,SmartFeaturesFragment,C:/Experimental/src/rsc/images/SmartOffFragment_0_0,,SmartActivity,
+//android.widget.LinearLayout,LinearLayout,Complete,,SmartFeaturesFragment,C:/Experimental/src/rsc/images/SmartOffFragment_0_1,Daylight detection,SmartActivity,Dynamic
+//android.widget.LinearLayout,LinearLayout,Complete,,SmartFeaturesFragment,C:/Experimental/src/rsc/images/SmartOffFragment_0_2,Do not disturb,SmartActivity,
+//android.widget.LinearLayout,LinearLayout,Complete,,SmartFeaturesFragment,C:/Experimental/src/rsc/images/SmartOffFragment_0_3,Motion Sensitivity,SmartActivity,Dynamic

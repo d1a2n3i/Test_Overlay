@@ -1,0 +1,6 @@
+xpath,type,status,NextFrame,PreviousFrame,ElementImage,ElementText,CallerActivity,Tag
+//android.widget.ImageButton,ImageButton,Complete,,RemindersAlertsFragment,C:/Experimental/src/rsc/images/ReminderPreferencesFragment_0,,ThermostatSettingsActivity,
+//android.widget.ImageButton,ImageButton,Complete,,RemindersAlertsFragment,C:/Experimental/src/rsc/images/ReminderPreferencesFragment_1,,ThermostatSettingsActivity,
+//android.widget.ImageButton,ImageButton,Complete,FurnaceFilterPreferenceDetailFragment,RemindersAlertsFragment,C:/Experimental/src/rsc/images/ReminderPreferencesFragment_2,,ThermostatSettingsActivity,
+//android.widget.ImageButton,ImageButton,Complete,UvLampPreferenceDetailFragment,RemindersAlertsFragment,C:/Experimental/src/rsc/images/ReminderPreferencesFragment_3,,ThermostatSettingsActivity,
+//android.widget.ImageButton,ImageButton,Complete,HumidifierPreferenceDetailFragment,RemindersAlertsFragment,C:/Experimental/src/rsc/images/ReminderPreferencesFragment_4,,ThermostatSettingsActivity,

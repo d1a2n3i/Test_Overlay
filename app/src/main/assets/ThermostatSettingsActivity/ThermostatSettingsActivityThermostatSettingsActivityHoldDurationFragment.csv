@@ -1,0 +1,8 @@
+xpath,type,status,NextFrame,PreviousFrame,ElementImage,ElementText,CallerActivity,Tag
+//android.widget.CheckedTextView[@text= '2 hours'],CheckedTextView,Complete,,ThermostatPreferencesFragment,C:/Experimental/src/rsc/images/ThermostatSettingsActivityHoldDurationFragment_0,2 hours,ThermostatSettingsActivity,
+//android.widget.CheckedTextView[@text= '4 hours'],CheckedTextView,Complete,,ThermostatPreferencesFragment,C:/Experimental/src/rsc/images/ThermostatSettingsActivityHoldDurationFragment_1,4 hours,ThermostatSettingsActivity,
+//android.widget.CheckedTextView[@text= 'Until next scheduled activity'],CheckedTextView,Complete,,ThermostatPreferencesFragment,C:/Experimental/src/rsc/images/ThermostatSettingsActivityHoldDurationFragment_2,Until next scheduled activity,ThermostatSettingsActivity,
+//android.widget.CheckedTextView[@text= 'Until I change it'],CheckedTextView,Complete,,ThermostatPreferencesFragment,C:/Experimental/src/rsc/images/ThermostatSettingsActivityHoldDurationFragment_3,Until I change it,ThermostatSettingsActivity,
+//android.widget.CheckedTextView[@text= 'Ask every time'],CheckedTextView,Complete,,ThermostatPreferencesFragment,C:/Experimental/src/rsc/images/ThermostatSettingsActivityHoldDurationFragment_4,Ask every time,ThermostatSettingsActivity,
+//android.widget.Button[@text= 'CANCEL'],Button,Complete,,ThermostatPreferencesFragment,C:/Experimental/src/rsc/images/ThermostatSettingsActivityHoldDurationFragment_5,CANCEL,ThermostatSettingsActivity,
+//android.widget.Button[@text= 'OK'],Button,Complete,,ThermostatPreferencesFragment,C:/Experimental/src/rsc/images/ThermostatSettingsActivityHoldDurationFragment_6,OK,ThermostatSettingsActivity,

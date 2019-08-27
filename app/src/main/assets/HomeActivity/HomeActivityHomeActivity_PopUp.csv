@@ -1,0 +1,5 @@
+xpath,type,status,NextFrame,PreviousFrame,ElementImage,ElementText,CallerActivity,Tag
+//android.widget.LinearLayout,LinearLayout,Complete,,HomeDevicesFragment,C:/Experimental/src/rsc/images/HomeActivity_PopUp_0,Automation Home,HomeActivity,
+//android.widget.LinearLayout,LinearLayout,Complete,HomesListFragment,HomeDevicesFragment,C:/Experimental/src/rsc/images/HomeActivity_PopUp_1,Manage Homes,HomeActivity,
+,,Complete,,,,,,
+,,Complete,,,,,,

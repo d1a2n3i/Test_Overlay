@@ -1,0 +1,6 @@
+xpath,type,status,NextFrame,PreviousFrame,ElementImage,ElementText,CallerActivity,Tag
+//android.widget.Button[@text= '51'],Button,Complete,,ComfortSettingsEditFragment,C:/Experimental/src/rsc/images/ComfortSettingsDetailActivity_PopUp_0,51,ComfortSettingsDetailActivity,
+//android.widget.EditText[@text= '52'],EditText,Complete,,ComfortSettingsEditFragment,C:/Experimental/src/rsc/images/ComfortSettingsDetailActivity_PopUp_1,52,ComfortSettingsDetailActivity,
+//android.widget.Button[@text= '53'],Button,Complete,,ComfortSettingsEditFragment,C:/Experimental/src/rsc/images/ComfortSettingsDetailActivity_PopUp_2,53,ComfortSettingsDetailActivity,
+//android.widget.Button[@text= 'CANCEL'],Button,Complete,,ComfortSettingsEditFragment,C:/Experimental/src/rsc/images/ComfortSettingsDetailActivity_PopUp_3,CANCEL,ComfortSettingsDetailActivity,
+//android.widget.Button[@text= 'OK'],Button,Complete,,ComfortSettingsEditFragment,C:/Experimental/src/rsc/images/ComfortSettingsDetailActivity_PopUp_4,OK,ComfortSettingsDetailActivity,

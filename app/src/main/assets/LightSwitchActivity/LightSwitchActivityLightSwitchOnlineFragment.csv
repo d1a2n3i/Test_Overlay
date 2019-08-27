@@ -1,0 +1,7 @@
+xpath,type,status,NextFrame,PreviousFrame,ElementImage,ElementText,CallerActivity,Tag,Operation
+//android.widget.ImageButton,ImageButton,Complete,,HomeDevicesFragment,C:/Experimental/src/rsc/images/LightSwitchOnlineFragment_0,,LightSwitchActivity,,
+//android.widget.FrameLayout,FrameLayout,Complete,,HomeDevicesFragment,C:/Experimental/src/rsc/images/LightSwitchOnlineFragment_1,,LightSwitchActivity,Dynamic,NetworkCall
+//android.widget.ImageView,ImageView,Complete,LightSwitchSettingsActivityMainMenuFragment,HomeDevicesFragment,C:/Experimental/src/rsc/images/LightSwitchOnlineFragment_2,,LightSwitchActivity,,
+//android.widget.ImageView,ImageView,Complete,SmartFeaturesFragment,HomeDevicesFragment,C:/Experimental/src/rsc/images/LightSwitchOnlineFragment_3,,LightSwitchActivity,,
+//android.widget.ImageView,ImageView,Complete,VoiceControlFragment,HomeDevicesFragment,C:/Experimental/src/rsc/images/LightSwitchOnlineFragment_4,,LightSwitchActivity,,
+,,Complete,,,,,,,

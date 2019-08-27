@@ -1,0 +1,3 @@
+xpath,type,status,NextFrame,PreviousFrame,ElementImage,ElementText,CallerActivity,Tag,Operation
+//android.widget.ImageButton,ImageButton,Complete,,VoiceControlFragment,C:/Experimental/src/rsc/images/SoundEffectsFragment_0,,VoiceControlActivity,,
+//android.widget.Switch[@text= 'ON'],Switch,Complete,,VoiceControlFragment,C:/Experimental/src/rsc/images/SoundEffectsFragment_1,ON,VoiceControlActivity,Dynamic,NetworkCall

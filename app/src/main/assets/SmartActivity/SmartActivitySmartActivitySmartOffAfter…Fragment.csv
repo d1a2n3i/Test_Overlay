@@ -1,0 +1,6 @@
+xpath,type,status,NextFrame,PreviousFrame,ElementImage,ElementText,CallerActivity,Tag
+//android.widget.Button[@text= '10'],Button,Complete,,SmartFeaturesFragment_0,C:/Experimental/src/rsc/images/SmartActivitySmartOffAfter…Fragment_0,10,SmartActivity,
+//android.widget.EditText[@text= '15'],EditText,Complete,,SmartFeaturesFragment_0,C:/Experimental/src/rsc/images/SmartActivitySmartOffAfter…Fragment_1,15,SmartActivity,
+//android.widget.Button[@text= '20'],Button,Complete,,SmartFeaturesFragment_0,C:/Experimental/src/rsc/images/SmartActivitySmartOffAfter…Fragment_2,20,SmartActivity,
+//android.widget.Button[@text= 'CANCEL'],Button,Complete,,SmartFeaturesFragment_0,C:/Experimental/src/rsc/images/SmartActivitySmartOffAfter…Fragment_3,CANCEL,SmartActivity,
+//android.widget.Button[@text= 'OK'],Button,Complete,,SmartFeaturesFragment_0,C:/Experimental/src/rsc/images/SmartActivitySmartOffAfter…Fragment_4,OK,SmartActivity,

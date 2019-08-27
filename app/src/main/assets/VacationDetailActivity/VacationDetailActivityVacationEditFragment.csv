@@ -1,0 +1,11 @@
+xpath,type,status,NextFrame,PreviousFrame,ElementImage,ElementText,CallerActivity,Tag
+//android.widget.ImageButton,ImageButton,Complete,VacationDetailActivity_PopUp,VacationSelectorFragment,C:/Experimental/src/rsc/images/VacationEditFragment_0,,VacationDetailActivity,
+//android.widget.TextView[@text= 'SAVE'],TextView,Complete,,VacationSelectorFragment,C:/Experimental/src/rsc/images/VacationEditFragment_1,SAVE,VacationDetailActivity,
+"//android.widget.TextView[@text= 'Jul 3, 2019']",TextView,Complete,VacationDetailActivity_DatePicker,VacationSelectorFragment,C:/Experimental/src/rsc/images/VacationEditFragment_2,"Jul 3, 2019",VacationDetailActivity,
+//android.widget.TextView[@text= '3:55 PM'],TextView,Complete,VacationDetailActivity_TimePicker,VacationSelectorFragment,C:/Experimental/src/rsc/images/VacationEditFragment_3,3:55 PM,VacationDetailActivity,
+"//android.widget.TextView[@text= 'Jul 4, 2019']",TextView,Complete,,VacationSelectorFragment,C:/Experimental/src/rsc/images/VacationEditFragment_4,"Jul 4, 2019",VacationDetailActivity,
+//android.widget.TextView[@text= '3:55 PM'],TextView,Complete,,VacationSelectorFragment,C:/Experimental/src/rsc/images/VacationEditFragment_5,3:55 PM,VacationDetailActivity,
+//android.widget.LinearLayout,LinearLayout,Complete,VacationEditDeviceFragment,VacationSelectorFragment,C:/Experimental/src/rsc/images/VacationEditFragment_6,Cottage,VacationDetailActivity,
+//android.widget.LinearLayout,LinearLayout,Complete,VacationEditLightSwitchFragment,VacationSelectorFragment,C:/Experimental/src/rsc/images/VacationEditFragment_7,2132,VacationDetailActivity,
+//android.widget.LinearLayout,LinearLayout,Complete,,VacationSelectorFragment,C:/Experimental/src/rsc/images/VacationEditFragment_8,Living Room,VacationDetailActivity,
+//android.widget.LinearLayout,LinearLayout,Complete,,VacationSelectorFragment,C:/Experimental/src/rsc/images/VacationEditFragment_9,ADD/REMOVE DEVICES,VacationDetailActivity,

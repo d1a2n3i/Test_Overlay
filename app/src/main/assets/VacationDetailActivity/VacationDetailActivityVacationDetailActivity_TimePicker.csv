@@ -1,0 +1,8 @@
+xpath,type,status,NextFrame,PreviousFrame,ElementImage,ElementText,CallerActivity,Tag
+//android.widget.TextView[@text= '3'],TextView,Complete,,VacationEditFragment,C:/Experimental/src/rsc/images/VacationDetailActivity_TimePicker_0,3,VacationDetailActivity,
+//android.widget.TextView[@text= '56'],TextView,Complete,,VacationEditFragment,C:/Experimental/src/rsc/images/VacationDetailActivity_TimePicker_1,56,VacationDetailActivity,
+//android.widget.RadioButton[@text= 'AM'],RadioButton,Complete,,VacationEditFragment,C:/Experimental/src/rsc/images/VacationDetailActivity_TimePicker_2,AM,VacationDetailActivity,
+//android.widget.RadioButton[@text= 'PM'],RadioButton,Complete,,VacationEditFragment,C:/Experimental/src/rsc/images/VacationDetailActivity_TimePicker_3,PM,VacationDetailActivity,
+//android.widget.ImageButton,ImageButton,Complete,,VacationEditFragment,C:/Experimental/src/rsc/images/VacationDetailActivity_TimePicker_4,,VacationDetailActivity,Dynamic
+//android.widget.Button[@text= 'CANCEL'],Button,Complete,,VacationEditFragment,C:/Experimental/src/rsc/images/VacationDetailActivity_TimePicker_5,CANCEL,VacationDetailActivity,
+//android.widget.Button[@text= 'OK'],Button,Complete,,VacationEditFragment,C:/Experimental/src/rsc/images/VacationDetailActivity_TimePicker_6,OK,VacationDetailActivity,

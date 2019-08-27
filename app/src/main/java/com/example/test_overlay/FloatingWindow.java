@@ -26,21 +26,24 @@ import androidx.annotation.RequiresApi;
 
 public class FloatingWindow extends Service {
 
-    private MyAccessibilityService accessibility = new MyAccessibilityService();
     private WindowManager wm;
+
     private ImageButton recordButton;
     private ImageButton resetDataButton;
     private Button generateTestButton;
+
+    //SharedPreferneces stores information to be used between activities
     private SharedPreferences preferences;
     private SharedPreferences.Editor editor;
-    String recordInfo;
+    private String recordInfo;
     boolean generateFiles = false;
     boolean resetData = false;
-    int image = 0;
+
     GestureDetector gestureDetector;
 
     int height = Resources.getSystem().getDisplayMetrics().heightPixels;
     int width = Resources.getSystem().getDisplayMetrics().widthPixels;
+    int image = 0;
 
     @Override
     public IBinder onBind(Intent intent) {
@@ -52,18 +55,15 @@ public class FloatingWindow extends Service {
     public void onCreate(){
         super.onCreate();
 
-
+        /**
+         * Formating the button layout on screen
+         */
         int LAYOUT_FLAG;
-        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
-
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O)
             LAYOUT_FLAG = WindowManager.LayoutParams.TYPE_APPLICATION_OVERLAY;
-
-        }
-        else {
-
+        else
             LAYOUT_FLAG = WindowManager.LayoutParams.TYPE_PHONE;
 
-        }
 
         wm = (WindowManager) getSystemService(WINDOW_SERVICE);
         recordButton = new ImageButton(this);
@@ -88,18 +88,20 @@ public class FloatingWindow extends Service {
         wm.addView(recordButton,parameters);
         gestureDetector = new GestureDetector(this, new SingleTapConfirm());
 
-
         recordButton.setOnTouchListener(new View.OnTouchListener() {
             @Override
             public boolean onTouch(View view, MotionEvent event) {
                 if(gestureDetector.onTouchEvent(event)){
+
+                    //All touch events occur here
+
                     preferences = getSharedPreferences("SavedData",MODE_PRIVATE);
-                    recordInfo = preferences.getString("recordInfo","null");
+                    recordInfo = preferences.getString("recordInfo","null");//Record info
                     editor = preferences.edit();
 
                     Log.d("Before",recordInfo);
 
-                    if(!recordInfo.equals("null")) {
+                    if(recordInfo!= "null") {
 
                         if (image == 0) {
 
@@ -108,7 +110,6 @@ public class FloatingWindow extends Service {
                             recordInfo = "True";
                             editor.putString("recordInfo", recordInfo);
                             editor.apply();
-
                         }
                         else {
 
@@ -123,16 +124,13 @@ public class FloatingWindow extends Service {
                         Log.d("After", recordInfo);
 
                     }
-                    else{
-
+                    else
                         Toast.makeText(FloatingWindow.this,"Turn on the Accessibilty Services",Toast.LENGTH_LONG).show();
 
-                    }
                 }
                 else {
 
                     moveButton(view,event,150,150);
-
                     return true;
                 }
                 return false;
@@ -158,6 +156,7 @@ public class FloatingWindow extends Service {
             public boolean onTouch(View view, MotionEvent event) {
 
                 if(gestureDetector.onTouchEvent(event)){
+
                     preferences = getSharedPreferences("SavedData",MODE_PRIVATE);
                     editor = preferences.edit();
                     generateFiles = true;
@@ -216,6 +215,7 @@ public class FloatingWindow extends Service {
         });
     }
 
+    //Removes all of the Overlays
     public void onDestroy(){
         super.onDestroy();
 
@@ -233,16 +233,14 @@ public class FloatingWindow extends Service {
     }
 
     public void moveButton(View view, MotionEvent event, int btnWidth, int btnHeight){
+
         if(event.getAction() == MotionEvent.ACTION_MOVE){
 
             int LAYOUT_FLAG;
-            if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
+            if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O)
                 LAYOUT_FLAG = WindowManager.LayoutParams.TYPE_APPLICATION_OVERLAY;
-            }
-            else {
-
+            else
                 LAYOUT_FLAG = WindowManager.LayoutParams.TYPE_PHONE;
-            }
 
             WindowManager.LayoutParams parameters = new WindowManager.LayoutParams
                     (btnWidth,btnHeight, LAYOUT_FLAG,

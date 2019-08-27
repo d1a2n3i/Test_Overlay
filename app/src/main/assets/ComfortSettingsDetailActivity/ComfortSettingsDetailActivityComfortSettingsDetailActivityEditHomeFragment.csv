@@ -1,0 +1,10 @@
+xpath,type,status,NextFrame,PreviousFrame,ElementImage,ElementText,CallerActivity,Tag
+//android.widget.ImageButton,ImageButton,Complete,,ComfortSettingsFragment,C:/Experimental/src/rsc/images/ComfortSettingsDetailActivityEditHomeFragment_0,,ComfortSettingsDetailActivity,
+//android.widget.TextView[@text= 'SAVE'],TextView,Complete,,ComfortSettingsFragment,C:/Experimental/src/rsc/images/ComfortSettingsDetailActivityEditHomeFragment_1,SAVE,ComfortSettingsDetailActivity,
+//android.widget.LinearLayout,LinearLayout,Complete,,ComfortSettingsFragment,C:/Experimental/src/rsc/images/ComfortSettingsDetailActivityEditHomeFragment_2,Desired Heat,ComfortSettingsDetailActivity,
+//android.widget.LinearLayout,LinearLayout,Complete,,ComfortSettingsFragment,C:/Experimental/src/rsc/images/ComfortSettingsDetailActivityEditHomeFragment_3,Desired Cool,ComfortSettingsDetailActivity,
+//android.widget.RadioButton[@text= 'Auto'],RadioButton,Complete,,ComfortSettingsFragment,C:/Experimental/src/rsc/images/ComfortSettingsDetailActivityEditHomeFragment_4,Auto,ComfortSettingsDetailActivity,
+//android.widget.RadioButton[@text= 'On'],RadioButton,Complete,,ComfortSettingsFragment,C:/Experimental/src/rsc/images/ComfortSettingsDetailActivityEditHomeFragment_5,On,ComfortSettingsDetailActivity,
+//android.widget.RadioButton[@text= 'Auto'],RadioButton,Complete,,ComfortSettingsFragment,C:/Experimental/src/rsc/images/ComfortSettingsDetailActivityEditHomeFragment_6,Auto,ComfortSettingsDetailActivity,
+//android.widget.RadioButton[@text= 'On'],RadioButton,Complete,,ComfortSettingsFragment,C:/Experimental/src/rsc/images/ComfortSettingsDetailActivityEditHomeFragment_7,On,ComfortSettingsDetailActivity,
+//android.widget.LinearLayout,LinearLayout,Complete,,ComfortSettingsFragment,C:/Experimental/src/rsc/images/ComfortSettingsDetailActivityEditHomeFragment_8,1 Participating Sensor,ComfortSettingsDetailActivity,

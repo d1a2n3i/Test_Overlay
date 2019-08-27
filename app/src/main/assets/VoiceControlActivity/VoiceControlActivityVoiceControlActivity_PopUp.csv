@@ -1,0 +1,3 @@
+xpath,type,status,NextFrame,PreviousFrame,ElementImage,ElementText,CallerActivity,Tag
+//android.widget.Button[@text= 'CANCEL'],Button,Complete,,VoiceControlFragment,C:/Experimental/src/rsc/images/VoiceControlActivity_PopUp_0,CANCEL,VoiceControlActivity,
+//android.widget.Button[@text= 'UNLINK'],Button,Complete,,VoiceControlFragment,C:/Experimental/src/rsc/images/VoiceControlActivity_PopUp_1,UNLINK,VoiceControlActivity,

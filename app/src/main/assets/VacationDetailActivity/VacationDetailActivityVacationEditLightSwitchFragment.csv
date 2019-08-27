@@ -1,0 +1,4 @@
+xpath,type,status,NextFrame,PreviousFrame,ElementImage,ElementText,CallerActivity,Tag
+//android.widget.ImageButton,ImageButton,Complete,,VacationEditFragment,C:/Experimental/src/rsc/images/VacationEditLightSwitchFragment_0,,VacationDetailActivity,
+//android.widget.LinearLayout,LinearLayout,Complete,,VacationEditFragment,C:/Experimental/src/rsc/images/VacationEditLightSwitchFragment_1,During vacation,VacationDetailActivity,
+,,Complete,,,,,,

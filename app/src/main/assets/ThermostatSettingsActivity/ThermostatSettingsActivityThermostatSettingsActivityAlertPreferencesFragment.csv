@@ -1,0 +1,8 @@
+xpath,type,status,NextFrame,PreviousFrame,ElementImage,ElementText,CallerActivity,Tag
+//android.widget.ImageButton,ImageButton,Complete,,RemindersAlertsFragment,C:/Experimental/src/rsc/images/ThermostatSettingsActivityAlertPreferencesFragment_0,,ThermostatSettingsActivity,
+//android.widget.RelativeLayout,RelativeLayout,Complete,,RemindersAlertsFragment,C:/Experimental/src/rsc/images/ThermostatSettingsActivityAlertPreferencesFragment_1,Low Temperature,ThermostatSettingsActivity,
+//android.widget.RelativeLayout,RelativeLayout,Complete,,RemindersAlertsFragment,C:/Experimental/src/rsc/images/ThermostatSettingsActivityAlertPreferencesFragment_2,High Temperature,ThermostatSettingsActivity,
+//android.widget.RelativeLayout,RelativeLayout,Complete,,RemindersAlertsFragment,C:/Experimental/src/rsc/images/ThermostatSettingsActivityAlertPreferencesFragment_3,Low Humidity,ThermostatSettingsActivity,
+//android.widget.RelativeLayout,RelativeLayout,Complete,,RemindersAlertsFragment,C:/Experimental/src/rsc/images/ThermostatSettingsActivityAlertPreferencesFragment_4,High Humidity,ThermostatSettingsActivity,
+//android.widget.RelativeLayout,RelativeLayout,Complete,,RemindersAlertsFragment,C:/Experimental/src/rsc/images/ThermostatSettingsActivityAlertPreferencesFragment_5,Aux Heat Runtime,ThermostatSettingsActivity,
+//android.widget.RelativeLayout,RelativeLayout,Complete,,RemindersAlertsFragment,C:/Experimental/src/rsc/images/ThermostatSettingsActivityAlertPreferencesFragment_6,Aux Outdoor Temperature,ThermostatSettingsActivity,

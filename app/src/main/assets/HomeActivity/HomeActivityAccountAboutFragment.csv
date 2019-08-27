@@ -1,0 +1,9 @@
+xpath,type,status,NextFrame,PreviousFrame,ElementImage,ElementText,CallerActivity,Tag
+//android.widget.ImageButton,ImageButton,Complete,,AccountFragment,C:/Experimental/src/rsc/images/AccountAboutFragment_0,,HomeActivity,
+//android.widget.LinearLayout,LinearLayout,Complete,,AccountFragment,C:/Experimental/src/rsc/images/AccountAboutFragment_1,Send Feedback,HomeActivity,
+//android.widget.LinearLayout,LinearLayout,Complete,,AccountFragment,C:/Experimental/src/rsc/images/AccountAboutFragment_2,Website,HomeActivity,
+//android.widget.LinearLayout,LinearLayout,Complete,,AccountFragment,C:/Experimental/src/rsc/images/AccountAboutFragment_3,Email,HomeActivity,
+//android.widget.LinearLayout,LinearLayout,Complete,,AccountFragment,C:/Experimental/src/rsc/images/AccountAboutFragment_4,Phone,HomeActivity,
+//android.widget.FrameLayout,FrameLayout,Complete,,AccountFragment,C:/Experimental/src/rsc/images/AccountAboutFragment_5,Home,HomeActivity,
+//android.widget.FrameLayout,FrameLayout,Not Complete,,AccountFragment,C:/Experimental/src/rsc/images/AccountAboutFragment_6,Vacation,HomeActivity,
+//android.widget.FrameLayout,FrameLayout,Not Complete,,AccountFragment,C:/Experimental/src/rsc/images/AccountAboutFragment_7,Account,HomeActivity,

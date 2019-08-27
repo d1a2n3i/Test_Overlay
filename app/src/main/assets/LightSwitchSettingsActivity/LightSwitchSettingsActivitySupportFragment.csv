@@ -1,0 +1,5 @@
+xpath,type,status,NextFrame,PreviousFrame,ElementImage,ElementText,CallerActivity,Tag
+//android.widget.ImageButton,ImageButton,Complete,,LightSwitchSettingsActivityMainMenuFragment,C:/Experimental/src/rsc/images/SupportFragment_0,,LightSwitchSettingsActivity,
+//android.widget.LinearLayout,LinearLayout,Complete,,LightSwitchSettingsActivityMainMenuFragment,C:/Experimental/src/rsc/images/SupportFragment_1,Light Bar States,LightSwitchSettingsActivity,
+//android.widget.LinearLayout,LinearLayout,Complete,ResetDeviceFragment,LightSwitchSettingsActivityMainMenuFragment,C:/Experimental/src/rsc/images/SupportFragment_2,Resetting Device,LightSwitchSettingsActivity,
+//android.widget.LinearLayout,LinearLayout,Complete,,LightSwitchSettingsActivityMainMenuFragment,C:/Experimental/src/rsc/images/SupportFragment_3,Smart Home Integrations,LightSwitchSettingsActivity,

@@ -1,0 +1,7 @@
+xpath,type,status,NextFrame,PreviousFrame,ElementImage,ElementText,CallerActivity,Tag,Operation
+//android.widget.ImageButton,ImageButton,Complete,,SystemFragment,C:/Experimental/src/rsc/images/HvacFragment_0,,ThermostatSettingsActivity,,
+//android.widget.RadioButton[@text= 'Heat'],RadioButton,Complete,,SystemFragment,C:/Experimental/src/rsc/images/HvacFragment_1,Heat,ThermostatSettingsActivity,Dynamic,NetworkCall
+//android.widget.RadioButton[@text= 'Cool'],RadioButton,Complete,,SystemFragment,C:/Experimental/src/rsc/images/HvacFragment_2,Cool,ThermostatSettingsActivity,Dynamic,NetworkCall
+//android.widget.RadioButton[@text= 'Auto'],RadioButton,Complete,,SystemFragment,C:/Experimental/src/rsc/images/HvacFragment_3,Auto,ThermostatSettingsActivity,,NetworkCall
+//android.widget.RadioButton[@text= 'Aux'],RadioButton,Complete,,SystemFragment,C:/Experimental/src/rsc/images/HvacFragment_4,Aux,ThermostatSettingsActivity,Dynamic,NetworkCall
+//android.widget.RadioButton[@text= 'Off'],RadioButton,Complete,,SystemFragment,C:/Experimental/src/rsc/images/HvacFragment_5,Off,ThermostatSettingsActivity,Dynamic,NetworkCall

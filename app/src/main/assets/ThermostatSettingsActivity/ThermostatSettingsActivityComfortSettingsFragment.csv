@@ -1,0 +1,12 @@
+xpath,type,status,NextFrame,PreviousFrame,ElementImage,ElementText,CallerActivity,Tag
+//android.widget.ImageButton,ImageButton,Complete,,MenuFragment,C:/Experimental/src/rsc/images/ComfortSettingsFragment_0,,ThermostatSettingsActivity,
+//android.widget.TextView,TextView,Complete,ComfortSettingsEditFragment,MenuFragment,C:/Experimental/src/rsc/images/ComfortSettingsFragment_1,,ThermostatSettingsActivity,
+//android.widget.TextView[@text= 'Comfort settings make sure your home is the right temperature during specific activities in your schedule. Learn more'],TextView,Complete,,MenuFragment,C:/Experimental/src/rsc/images/ComfortSettingsFragment_2,Comfort settings make sure your home is the right temperature during specific activities in your schedule. Learn more,ThermostatSettingsActivity,
+//android.widget.FrameLayout,FrameLayout,Complete,,MenuFragment,C:/Experimental/src/rsc/images/ComfortSettingsFragment_3,Home,ThermostatSettingsActivity,
+//android.widget.LinearLayout,LinearLayout,Complete,ComfortSettingsDetailActivityEditHomeFragment,MenuFragment,C:/Experimental/src/rsc/images/ComfortSettingsFragment_4,Home,ThermostatSettingsActivity,
+//android.widget.FrameLayout,FrameLayout,Complete,ComfortSettingsDetailActivityEditAwayFragment,MenuFragment,C:/Experimental/src/rsc/images/ComfortSettingsFragment_5,Away,ThermostatSettingsActivity,
+//android.widget.LinearLayout,LinearLayout,Complete,ComfortSettingsDetailActivityEditAwayFragment,MenuFragment,C:/Experimental/src/rsc/images/ComfortSettingsFragment_6,Away,ThermostatSettingsActivity,
+//android.widget.FrameLayout,FrameLayout,Complete,ComfortSettingsDetailActivityEditSleepFragment,MenuFragment,C:/Experimental/src/rsc/images/ComfortSettingsFragment_7,Sleep,ThermostatSettingsActivity,
+//android.widget.LinearLayout,LinearLayout,Complete,ComfortSettingsDetailActivityEditSleepFragment,MenuFragment,C:/Experimental/src/rsc/images/ComfortSettingsFragment_8,Sleep,ThermostatSettingsActivity,
+//android.widget.FrameLayout,FrameLayout,Complete,,MenuFragment,C:/Experimental/src/rsc/images/ComfortSettingsFragment_9,1,ThermostatSettingsActivity,
+//android.widget.LinearLayout,LinearLayout,Complete,,MenuFragment,C:/Experimental/src/rsc/images/ComfortSettingsFragment_10,1,ThermostatSettingsActivity,

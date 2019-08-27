@@ -1,0 +1,2 @@
+xpath,type,status,NextFrame,PreviousFrame,ElementImage,ElementText,CallerActivity,Tag
+//android.widget.ImageButton,ImageButton,Complete,,ConfigureWifiFragment,C:/Experimental/src/rsc/images/FindDeviceWifiFragment_0,,LightSwitchSettingsActivity,

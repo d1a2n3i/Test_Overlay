@@ -1,0 +1,2 @@
+xpath,type,status,NextFrame,PreviousFrame,ElementImage,ElementText,CallerActivity,Tag
+//android.widget.Button[@text= 'OK'],Button,Complete,,SensorUnavailableFragment,C:/Experimental/src/rsc/images/ThermostatSettingsActivityItmaytakeafewminutestounpairsensor.Fragment_0,OK,ThermostatSettingsActivity,

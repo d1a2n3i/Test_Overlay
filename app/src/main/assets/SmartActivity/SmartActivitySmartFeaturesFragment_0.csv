@@ -1,0 +1,3 @@
+xpath,type,status,NextFrame,PreviousFrame,ElementImage,ElementText,CallerActivity,Tag
+//android.widget.ImageButton,ImageButton,Complete,,SmartFeaturesFragment,C:/Experimental/src/rsc/images/SmartFeaturesFragment_0_0,,SmartActivity,
+//android.widget.LinearLayout,LinearLayout,Complete,SmartActivitySmartOffAfter…Fragment,SmartFeaturesFragment,C:/Experimental/src/rsc/images/SmartFeaturesFragment_0_1,Smart Off,SmartActivity,

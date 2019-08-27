@@ -1,0 +1,2 @@
+xpath,type,status,NextFrame,PreviousFrame,ElementImage,ElementText,CallerActivity,Tag
+//android.widget.ImageView,ImageView,Complete,,ThermostatFragment,C:/Experimental/src/rsc/images/OverviewFragment_0,,WeatherActivity,

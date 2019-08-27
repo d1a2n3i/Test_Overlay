@@ -1,0 +1,4 @@
+xpath,type,status,NextFrame,PreviousFrame,ElementImage,ElementText,CallerActivity,Tag
+//android.widget.ImageButton,ImageButton,Complete,,HomeActivity_PopUp,C:/Experimental/src/rsc/images/HomesListFragment_0,,ManageHomesActivity,
+//android.widget.LinearLayout,LinearLayout,Complete,HomesListFragment_0,HomeActivity_PopUp,C:/Experimental/src/rsc/images/HomesListFragment_1,Automation Home,ManageHomesActivity,
+//android.widget.LinearLayout,LinearLayout,Complete,HomeMigrationActivityAddaHomeFragment,HomeActivity_PopUp,C:/Experimental/src/rsc/images/HomesListFragment_2,ADD A NEW HOME,ManageHomesActivity,

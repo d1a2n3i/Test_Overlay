@@ -1,0 +1,5 @@
+xpath,type,status,NextFrame,PreviousFrame,ElementImage,ElementText,CallerActivity,Tag
+//android.widget.ImageButton,ImageButton,Complete,,LightSwitchOnlineFragment,C:/Experimental/src/rsc/images/VoiceControlFragment_0,,VoiceControlActivity,
+//android.widget.LinearLayout,LinearLayout,Complete,SoundEffectsFragment,LightSwitchOnlineFragment,C:/Experimental/src/rsc/images/VoiceControlFragment_1,Request Sounds,VoiceControlActivity,
+//android.widget.LinearLayout,LinearLayout,Complete,,LightSwitchOnlineFragment,C:/Experimental/src/rsc/images/VoiceControlFragment_2,What can I ask my ecobee?,VoiceControlActivity,Dynamic
+//android.widget.TextView[@text= 'UNLINK ALEXA'],TextView,Complete,VoiceControlActivity_PopUp,LightSwitchOnlineFragment,C:/Experimental/src/rsc/images/VoiceControlFragment_3,UNLINK ALEXA,VoiceControlActivity,

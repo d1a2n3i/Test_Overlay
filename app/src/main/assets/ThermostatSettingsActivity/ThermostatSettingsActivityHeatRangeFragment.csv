@@ -1,0 +1,2 @@
+xpath,type,status,NextFrame,PreviousFrame,ElementImage,ElementText,CallerActivity,Tag
+//android.widget.ImageButton,ImageButton,Complete,,ThermostatPreferencesFragment,C:/Experimental/src/rsc/images/HeatRangeFragment_0,,ThermostatSettingsActivity,

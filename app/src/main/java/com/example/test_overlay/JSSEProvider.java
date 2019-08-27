@@ -3,6 +3,8 @@ package com.example.test_overlay;
 import java.security.AccessController;
 import java.security.Provider;
 
+
+//Some java security stuff for sending the email, not important
 public final class JSSEProvider extends Provider {
 
     public JSSEProvider() {

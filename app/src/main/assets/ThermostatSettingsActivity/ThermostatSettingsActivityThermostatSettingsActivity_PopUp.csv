@@ -1,0 +1,7 @@
+xpath,type,status,NextFrame,PreviousFrame,ElementImage,ElementText,CallerActivity,Tag
+//android.widget.Button[@text= '0'],Button,Complete,,FanFragment,C:/Experimental/src/rsc/images/ThermostatSettingsActivity_PopUp_0,0,ThermostatSettingsActivity,
+//android.widget.EditText[@text= '5'],EditText,Complete,,FanFragment,C:/Experimental/src/rsc/images/ThermostatSettingsActivity_PopUp_1,5,ThermostatSettingsActivity,
+//android.widget.Button[@text= '10'],Button,Complete,,FanFragment,C:/Experimental/src/rsc/images/ThermostatSettingsActivity_PopUp_2,10,ThermostatSettingsActivity,
+//android.widget.Button[@text= 'CANCEL'],Button,Complete,,FanFragment,C:/Experimental/src/rsc/images/ThermostatSettingsActivity_PopUp_3,CANCEL,ThermostatSettingsActivity,
+//android.widget.Button[@text= 'OK'],Button,Complete,,FanFragment,C:/Experimental/src/rsc/images/ThermostatSettingsActivity_PopUp_4,OK,ThermostatSettingsActivity,
+,,Complete,,,,,,

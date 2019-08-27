@@ -1,0 +1,7 @@
+xpath,type,status,NextFrame,PreviousFrame,ElementImage,ElementText,CallerActivity,Tag
+//android.widget.ImageButton,ImageButton,Complete,,MenuFragment,C:/Experimental/src/rsc/images/ThermostatPreferencesFragment_0,,ThermostatSettingsActivity,
+//android.widget.LinearLayout,LinearLayout,Complete,ThermostatNameFragment,MenuFragment,C:/Experimental/src/rsc/images/ThermostatPreferencesFragment_1,Device Name,ThermostatSettingsActivity,
+//android.widget.LinearLayout,LinearLayout,Complete,ThermostatSettingsActivityTemperatureDisplayFragment,MenuFragment,C:/Experimental/src/rsc/images/ThermostatPreferencesFragment_2,Temperature Display,ThermostatSettingsActivity,
+//android.widget.LinearLayout,LinearLayout,Complete,HeatRangeFragment,MenuFragment,C:/Experimental/src/rsc/images/ThermostatPreferencesFragment_3,Heating Range,ThermostatSettingsActivity,
+//android.widget.LinearLayout,LinearLayout,Complete,CoolRangeFragment,MenuFragment,C:/Experimental/src/rsc/images/ThermostatPreferencesFragment_4,Cooling Range,ThermostatSettingsActivity,
+//android.widget.LinearLayout,LinearLayout,Complete,ThermostatSettingsActivityHoldDurationFragment,MenuFragment,C:/Experimental/src/rsc/images/ThermostatPreferencesFragment_5,Hold Duration,ThermostatSettingsActivity,

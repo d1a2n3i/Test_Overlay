@@ -1,0 +1,6 @@
+xpath,type,status,NextFrame,PreviousFrame,ElementImage,ElementText,CallerActivity,Tag
+//android.widget.TextView,TextView,Complete,VacationEditFragment,HomeDevicesFragment,C:/Experimental/src/rsc/images/VacationSelectorFragment_0,,HomeActivity,
+//android.widget.TextView[@text= 'SET A VACATION'],TextView,Complete,,HomeDevicesFragment,C:/Experimental/src/rsc/images/VacationSelectorFragment_1,SET A VACATION,HomeActivity,
+//android.widget.FrameLayout,FrameLayout,Complete,,HomeDevicesFragment,C:/Experimental/src/rsc/images/VacationSelectorFragment_2,Home,HomeActivity,
+//android.widget.FrameLayout,FrameLayout,Complete,,HomeDevicesFragment,C:/Experimental/src/rsc/images/VacationSelectorFragment_3,Vacation,HomeActivity,
+//android.widget.FrameLayout,FrameLayout,Not Complete,AccountFragment,HomeDevicesFragment,C:/Experimental/src/rsc/images/VacationSelectorFragment_4,Account,HomeActivity,

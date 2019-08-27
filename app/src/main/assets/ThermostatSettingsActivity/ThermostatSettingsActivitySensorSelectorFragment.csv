@@ -1,0 +1,7 @@
+xpath,type,status,NextFrame,PreviousFrame,ElementImage,ElementText,CallerActivity,Tag
+//android.widget.ImageButton,ImageButton,Complete,,MenuFragment,C:/Experimental/src/rsc/images/SensorSelectorFragment_0,,ThermostatSettingsActivity,
+//android.widget.LinearLayout,LinearLayout,Complete,SmartHomeAwayFragment,MenuFragment,C:/Experimental/src/rsc/images/SensorSelectorFragment_1,Smart Home/Away,ThermostatSettingsActivity,
+//android.widget.LinearLayout,LinearLayout,Complete,FollowMeFragment,MenuFragment,C:/Experimental/src/rsc/images/SensorSelectorFragment_2,Follow Me,ThermostatSettingsActivity,
+//android.widget.LinearLayout,LinearLayout,Complete,,MenuFragment,C:/Experimental/src/rsc/images/SensorSelectorFragment_3,Office,ThermostatSettingsActivity,
+//android.widget.LinearLayout,LinearLayout,Complete,SensorUnavailableFragment,MenuFragment,C:/Experimental/src/rsc/images/SensorSelectorFragment_4,0710,ThermostatSettingsActivity,
+//android.widget.LinearLayout,LinearLayout,Complete,,MenuFragment,C:/Experimental/src/rsc/images/SensorSelectorFragment_5,ADD SENSORS,ThermostatSettingsActivity,

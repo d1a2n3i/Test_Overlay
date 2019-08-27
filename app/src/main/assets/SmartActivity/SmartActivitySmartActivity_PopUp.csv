@@ -1,0 +1,3 @@
+xpath,type,status,NextFrame,PreviousFrame,ElementImage,ElementText,CallerActivity,Tag
+//android.widget.Button[@text= 'GOT IT'],Button,Complete,,SmartFeaturesFragment,C:/Experimental/src/rsc/images/SmartActivity_PopUp_0,GOT IT,SmartActivity,
+//android.widget.Button[@text= 'CHANGE TO OUTDOOR LIGHT'],Button,Complete,,SmartFeaturesFragment,C:/Experimental/src/rsc/images/SmartActivity_PopUp_1,CHANGE TO OUTDOOR LIGHT,SmartActivity,Dynamic

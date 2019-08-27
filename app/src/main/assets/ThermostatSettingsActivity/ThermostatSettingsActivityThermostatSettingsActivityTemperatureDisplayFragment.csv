@@ -1,0 +1,5 @@
+xpath,type,status,NextFrame,PreviousFrame,ElementImage,ElementText,CallerActivity,Tag
+//android.widget.CheckedTextView[@text= '°F'],CheckedTextView,Complete,,ThermostatPreferencesFragment,C:/Experimental/src/rsc/images/ThermostatSettingsActivityTemperatureDisplayFragment_0,°F,ThermostatSettingsActivity,
+//android.widget.CheckedTextView[@text= '°C'],CheckedTextView,Complete,,ThermostatPreferencesFragment,C:/Experimental/src/rsc/images/ThermostatSettingsActivityTemperatureDisplayFragment_1,°C,ThermostatSettingsActivity,
+//android.widget.Button[@text= 'CANCEL'],Button,Complete,,ThermostatPreferencesFragment,C:/Experimental/src/rsc/images/ThermostatSettingsActivityTemperatureDisplayFragment_2,CANCEL,ThermostatSettingsActivity,
+//android.widget.Button[@text= 'OK'],Button,Complete,,ThermostatPreferencesFragment,C:/Experimental/src/rsc/images/ThermostatSettingsActivityTemperatureDisplayFragment_3,OK,ThermostatSettingsActivity,

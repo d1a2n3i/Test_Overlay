@@ -1,0 +1,6 @@
+xpath,type,status,NextFrame,PreviousFrame,ElementImage,ElementText,CallerActivity,Tag
+//android.widget.TextView[@text= '2019'],TextView,Complete,,ReminderDetailFragment,C:/Experimental/src/rsc/images/ThermostatSettingsActivity_DatePicker_0,2019,ThermostatSettingsActivity,
+"//android.widget.TextView[@text= 'Wed, Jul 3']",TextView,Complete,,ReminderDetailFragment,C:/Experimental/src/rsc/images/ThermostatSettingsActivity_DatePicker_1,"Wed, Jul 3",ThermostatSettingsActivity,
+//android.widget.ImageButton,ImageButton,Complete,,ReminderDetailFragment,C:/Experimental/src/rsc/images/ThermostatSettingsActivity_DatePicker_2,,ThermostatSettingsActivity,
+//android.widget.Button[@text= 'CANCEL'],Button,Complete,,ReminderDetailFragment,C:/Experimental/src/rsc/images/ThermostatSettingsActivity_DatePicker_3,CANCEL,ThermostatSettingsActivity,
+//android.widget.Button[@text= 'OK'],Button,Complete,,ReminderDetailFragment,C:/Experimental/src/rsc/images/ThermostatSettingsActivity_DatePicker_4,OK,ThermostatSettingsActivity,

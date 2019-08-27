@@ -1,0 +1,5 @@
+xpath,type,status,NextFrame,PreviousFrame,ElementImage,ElementText,CallerActivity,Tag
+//android.widget.ImageButton,ImageButton,Complete,,MenuFragment,C:/Experimental/src/rsc/images/RemindersAlertsFragment_0,,ThermostatSettingsActivity,
+//android.widget.RelativeLayout,RelativeLayout,Complete,RemindersFragment,MenuFragment,C:/Experimental/src/rsc/images/RemindersAlertsFragment_1,Reminders,ThermostatSettingsActivity,
+//android.widget.RelativeLayout,RelativeLayout,Complete,ReminderPreferencesFragment,MenuFragment,C:/Experimental/src/rsc/images/RemindersAlertsFragment_2,Reminder Preferences,ThermostatSettingsActivity,
+//android.widget.RelativeLayout,RelativeLayout,Complete,ThermostatSettingsActivityAlertPreferencesFragment,MenuFragment,C:/Experimental/src/rsc/images/RemindersAlertsFragment_3,Alert Preferences,ThermostatSettingsActivity,

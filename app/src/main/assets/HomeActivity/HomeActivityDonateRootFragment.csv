@@ -1,0 +1,10 @@
+xpath,type,status,NextFrame,PreviousFrame,ElementImage,ElementText,CallerActivity,Tag,Operation
+//android.widget.ImageButton,ImageButton,Complete,,AccountFragment,C:/Experimental/src/rsc/images/DonateRootFragment_0,,HomeActivity,,
+"//android.widget.TextView[@text= 'Your ecobee data contains real-life insights into how you heat and cool your home. You have opted in to share your anonymized ecobee data with ecobee Research Partners.
+Keep an eye on your email for updates on Donate Your Data.']",TextView,Complete,,AccountFragment,C:/Experimental/src/rsc/images/DonateRootFragment_1,"Your ecobee data contains real-life insights into how you heat and cool your home. You have opted in to share your anonymized ecobee data with ecobee Research Partners.
+Keep an eye on your email for updates on Donate Your Data.",HomeActivity,,
+//android.widget.TextView[@text= 'OPT OUT'],TextView,Complete,,AccountFragment,C:/Experimental/src/rsc/images/DonateRootFragment_2,OPT OUT,HomeActivity,,
+//android.widget.TextView[@text= 'LEARN MORE'],TextView,Complete,,AccountFragment,C:/Experimental/src/rsc/images/DonateRootFragment_3,LEARN MORE,HomeActivity,,NetworkCall
+//android.widget.FrameLayout,FrameLayout,Complete,,AccountFragment,C:/Experimental/src/rsc/images/DonateRootFragment_4,Home,HomeActivity,,
+//android.widget.FrameLayout,FrameLayout,Complete,,AccountFragment,C:/Experimental/src/rsc/images/DonateRootFragment_5,Vacation,HomeActivity,,
+//android.widget.FrameLayout,FrameLayout,Complete,,AccountFragment,C:/Experimental/src/rsc/images/DonateRootFragment_6,Account,HomeActivity,,

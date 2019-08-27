@@ -1,0 +1,6 @@
+xpath,type,status,NextFrame,PreviousFrame,ElementImage,ElementText,CallerActivity,Tag
+//android.widget.ImageButton,ImageButton,Complete,,LightSwitchOnlineFragment,C:/Experimental/src/rsc/images/LightSwitchSettingsActivityMainMenuFragment_0,,LightSwitchSettingsActivity,
+//android.widget.LinearLayout,LinearLayout,Complete,DeviceSettingsFragment,LightSwitchOnlineFragment,C:/Experimental/src/rsc/images/LightSwitchSettingsActivityMainMenuFragment_1,Device Settings,LightSwitchSettingsActivity,
+//android.widget.LinearLayout,LinearLayout,Complete,WifiSettingsFragment,LightSwitchOnlineFragment,C:/Experimental/src/rsc/images/LightSwitchSettingsActivityMainMenuFragment_2,Wi-Fi Network,LightSwitchSettingsActivity,
+//android.widget.LinearLayout,LinearLayout,Complete,LightSwitchAboutFragment,LightSwitchOnlineFragment,C:/Experimental/src/rsc/images/LightSwitchSettingsActivityMainMenuFragment_3,About,LightSwitchSettingsActivity,
+//android.widget.LinearLayout,LinearLayout,Complete,SupportFragment,LightSwitchOnlineFragment,C:/Experimental/src/rsc/images/LightSwitchSettingsActivityMainMenuFragment_4,Help & Support,LightSwitchSettingsActivity,
