@@ -32,7 +32,10 @@ public class FloatingWindow extends Service {
     private ImageButton resetDataButton;
     private Button generateTestButton;
 
-    //SharedPreferneces stores information to be used between activities
+    /**
+     * SharedPreferences are used to store small pieces of data across teh entire application
+     * Using Keys to access the stored information across activities
+     */
     private SharedPreferences preferences;
     private SharedPreferences.Editor editor;
     private String recordInfo;
@@ -101,31 +104,28 @@ public class FloatingWindow extends Service {
 
                     Log.d("Before",recordInfo);
 
-                    if(recordInfo!= "null") {
 
-                        if (image == 0) {
 
-                            recordButton.setBackgroundResource(R.drawable.stop_song_red_512);
-                            image = 1;
-                            recordInfo = "True";
-                            editor.putString("recordInfo", recordInfo);
-                            editor.apply();
-                        }
-                        else {
+                    if (image == 0) {
 
-                            recordButton.setBackgroundResource(R.drawable.video_play_icon_png_1463536);
-                            image = 0;
-                            recordInfo = "False";
-                            editor.putString("recordInfo", recordInfo);
-                            editor.apply();
+                        recordButton.setBackgroundResource(R.drawable.stop_song_red_512);
+                        image = 1;
+                        recordInfo = "True";//Recording starts this Variable is used in MyAccessibilityService
+                        editor.putString("recordInfo", recordInfo);
+                        editor.apply();
+                    }
+                    else {
 
-                        }
-
-                        Log.d("After", recordInfo);
+                        recordButton.setBackgroundResource(R.drawable.video_play_icon_png_1463536);
+                        image = 0;
+                        recordInfo = "False";//Recording starts this Variable is used in MyAccessibilityService
+                        editor.putString("recordInfo", recordInfo);
+                        editor.apply();
 
                     }
-                    else
-                        Toast.makeText(FloatingWindow.this,"Turn on the Accessibilty Services",Toast.LENGTH_LONG).show();
+
+                    Log.d("After", recordInfo);
+
 
                 }
                 else {
@@ -184,7 +184,6 @@ public class FloatingWindow extends Service {
         resetDataButton.setBackgroundResource(R.drawable.reset);
         resetDataButton.setLayoutParams(llParameters);
 
-        Log.d("WIDTH",String.valueOf(width/2));
         parameters.x=-width/2;
         parameters.y=-300;
         parameters.gravity = Gravity.NO_GRAVITY;
@@ -224,6 +223,7 @@ public class FloatingWindow extends Service {
         wm.removeViewImmediate(resetDataButton);
     }
 
+    //Confirms a tap
     private class SingleTapConfirm extends GestureDetector.SimpleOnGestureListener {
 
         @Override
@@ -232,6 +232,7 @@ public class FloatingWindow extends Service {
         }
     }
 
+    //Moves the buttons
     public void moveButton(View view, MotionEvent event, int btnWidth, int btnHeight){
 
         if(event.getAction() == MotionEvent.ACTION_MOVE){

@@ -18,15 +18,19 @@ import java.util.List;
 
 public class DataFrameReader {
 
-    public String readAllDataFramesInFolder(Context context, String Activity, String buttonClicked) throws IOException {
+    int nextFrame = 3;//3 corresponds to the NextFrame Column on the DataFrame
+    int elementText = 6;//6 corresponds to the NextFrame Column on the DataFrame
     /**
-
-        **/
+     * Returns the next frame of an Activity/Fragment by locating the fragment a button has been clicked on and finding its associated next frame
+     * This is done by going through all fragments of an activity and through all the elements of those fragments until the button element has been found
+     * This can be implemented with fragments later on to decrease the occurrence of false positives
+     **/
+    public String readAllDataFramesInFolder(Context context, String Activity, String buttonClicked) throws IOException {
 
         String [] dataFrames = context.getAssets().list(Activity);//List of all fragments in this Activity
-      //  BufferedReader reader ;
 
-        String line = "";
+
+
         for(int i = 0; i < dataFrames.length; i++){
 
             CSVReader reader = new CSVReader(new InputStreamReader((context.getAssets().open(Activity + "/" +dataFrames[i])), Charset.forName("UTF-8")));
@@ -34,18 +38,18 @@ public class DataFrameReader {
             List myEntries = reader.readAll();
             String [] words = null;
             Log.d("MY ENTRIES SIZE", String.valueOf(myEntries.size()));
-            for(int j = 0; j < myEntries.size(); j++){//rows
+            for(int row = 0; row < myEntries.size(); row++){//rows
 
-                /*
-                myEntries.get(row)
-                word[columns]
+                /**
+                 * myEntries.get(row)
+                 * word[columns]
                 */
-                words = (String[]) myEntries.get(i);//myEntries.get(row)
+                words = (String[]) myEntries.get(row);//myEntries.get(row)
 
-                if(words[6].equals(buttonClicked))//if buttonClicked matches
+                if(words[elementText].equals(buttonClicked))//if buttonClicked matches
                 {
-                    if(!words[3].equals("")){
-                        String fragment = words[3];
+                    if(!words[nextFrame].equals("")){
+                        String fragment = words[nextFrame];
                         return fragment;
                     }
 

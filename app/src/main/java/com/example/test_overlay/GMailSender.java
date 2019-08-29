@@ -25,8 +25,8 @@ import javax.mail.internet.MimeMultipart;
 
 
 /**
- * GmailSender only works when a gmail account with lowered security is used
- *
+ * GmailSender only works when a gmail account with a lowered security is used
+ * sendMail() is the only relvant function used
  * **/
 
 public class GMailSender extends javax.mail.Authenticator {
@@ -61,7 +61,9 @@ public class GMailSender extends javax.mail.Authenticator {
         return new PasswordAuthentication(user, password);
     }
 
-    //Sends the mail
+    /**
+     *Sends a customizable email with a file attached
+     */
     public synchronized void sendMail(String subject, String body, String sender, String recipients, File attachment) throws Exception {
         try{
             MimeMessage message = new MimeMessage(session);

@@ -36,6 +36,13 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.Hashtable;
 
+/**
+ * MainActivity is the front page of the App it corresponding xml file is activity_main in res/layout
+ *
+ * Functionality: Allows users to grant the required permissions at the click of a button and also launches the overlay and
+ * MailSender activity
+ */
+
 public class MainActivity extends AppCompatActivity{
 
 
@@ -46,8 +53,12 @@ public class MainActivity extends AppCompatActivity{
 
     private int display = 0;
 
-    private SharedPreferences preferences;//Get info from shared prefrences
-    private SharedPreferences.Editor editor;//Store info to shared prefrences
+    /**
+     * SharedPreferences are used to store small pieces of data across teh entire application
+     * Using Keys to access the stored information across activities
+     */
+    private SharedPreferences preferences;//Get info from shared preferences
+    private SharedPreferences.Editor editor;//Store info to shared preferences
     String recordInfo;
 
 
@@ -71,14 +82,14 @@ public class MainActivity extends AppCompatActivity{
         editor.apply();
 
 
-        permissionBtn =  (Button) findViewById(R.id.permission);
+        permissionBtn = findViewById(R.id.permission);
         permissionBtn.setOnClickListener(new View.OnClickListener() {
             @RequiresApi(api = Build.VERSION_CODES.M)
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent (Settings.ACTION_ACCESSIBILITY_SETTINGS);
-                startActivity(intent);//gets permission
 
+                Intent intent = new Intent (Settings.ACTION_ACCESSIBILITY_SETTINGS);
+                startActivity(intent);//Launches the Activity to grant Accessibility services
 
             }
 
@@ -93,22 +104,27 @@ public class MainActivity extends AppCompatActivity{
                         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
                             if (checkSelfPermission(android.Manifest.permission.WRITE_EXTERNAL_STORAGE)
                                     == PackageManager.PERMISSION_GRANTED) {
-                                Toast.makeText(MainActivity.this,"Permission is granted",Toast.LENGTH_SHORT).show();
+
+                                Toast.makeText(MainActivity.this,
+                                        "Permission is granted", Toast.LENGTH_SHORT).show();
+
                             } else {
 
-                                Log.v("Not","Permission is revoked");
-                                ActivityCompat.requestPermissions(MainActivity.this, new String[]{Manifest.permission.WRITE_EXTERNAL_STORAGE}, 1);
+                                ActivityCompat.requestPermissions(MainActivity.this,
+                                        new String[]{Manifest.permission.WRITE_EXTERNAL_STORAGE},1);//Get Storage Permission
                             }
                         }
                         else { //permission is automatically granted on sdk<23 upon installation
-                            Log.v("Grant","Permission is granted");
+
+                            Log.v("Grant","Permission is already granted");
                         }
 
                     }
                 });
 
         final DataFrameReader dataFrameReader = new DataFrameReader();
-        displayOverlayBtn = (Button) findViewById(R.id.display_overlay);
+
+        displayOverlayBtn = findViewById(R.id.display_overlay);
         displayOverlayBtn.setText("Display Overlay");
 
         displayOverlayBtn.setOnClickListener(new View.OnClickListener() {
@@ -122,13 +138,13 @@ public class MainActivity extends AppCompatActivity{
                 if (!Settings.canDrawOverlays(MainActivity.this)) {
 
                     Intent intent = new Intent (Settings.ACTION_MANAGE_OVERLAY_PERMISSION, Uri.parse("package:" + getApplicationContext().getPackageName()));
-                    startActivityForResult(intent, 1);//gets permission
+                    startActivityForResult(intent, 1);//Starts Activity to get teh Overlay permission if the permission has not been granted yet
                 }
                 else {
                     //recordInfo is always set to false when the display is turned off or on
                     if(display==0) {
 
-                        startService(new Intent(MainActivity.this, FloatingWindow.class));
+                        startService(new Intent(MainActivity.this, FloatingWindow.class));//Starts the overlay Service
                         displayOverlayBtn.setText("Remove Overlay");
                         display = 1;
 
@@ -138,11 +154,12 @@ public class MainActivity extends AppCompatActivity{
 
                     }else if (display==1){
 
-                        stopService(new Intent(MainActivity.this, FloatingWindow.class));
+                        stopService(new Intent(MainActivity.this, FloatingWindow.class));//Stops the overlay Service
                         displayOverlayBtn.setText("Display Overlay");
                         display = 0;
 
-                        recordInfo = "False";
+
+                        recordInfo = "False";//Recording State set to false
                         editor.putString("recordInfo",recordInfo);
                         editor.apply();
 

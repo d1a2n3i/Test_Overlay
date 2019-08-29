@@ -6,18 +6,21 @@ import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import java.io.File;
 
+/**
+ * The associated layout of this file is called send_mail.xml located in the res/layout folder
+ */
 public class MailSenderActivity extends AppCompatActivity {
 
     private EditText subject;
     private EditText body;
-    private Button send;
-    private String senderEmail = "uslessemailtest@gmail.com";//throwaway email
-    private String [] recipients = {"dani.a@ecobee.com"};//Emails addresses used to
+    private String senderEmail = "uslessemailtest@gmail.com";//throwaway email used to send bdd files
+    private String [] recipients = {"dani.a@ecobee.com"};//Emails addresses the emails are sent too
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -66,6 +69,7 @@ public class MailSenderActivity extends AppCompatActivity {
                     }
                 });
                 sender.start();
+                Toast.makeText(MailSenderActivity.this, "Email Sent", Toast.LENGTH_SHORT).show();
             }
         });
     }
